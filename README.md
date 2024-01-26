@@ -1,2 +1,6 @@
-# salarios-2023
-salarios version 2023 con bibliografias
+# portfolio-2024
+## beta version with web components
+
+-custom Elements with ES Modules
+
+-later: with svelte maybe
