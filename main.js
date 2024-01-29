@@ -2,6 +2,11 @@ import "./style.css";
 import javascriptLogo from "./javascript.svg";
 import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.js";
+import {
+  VentanaContainer,
+  comportamientoBotonX,
+} from "./components/ventanaContainer.js";
+
 const array1 = ["<p>hola</p>", "<p>hola2</p>", "<p>hola3</p>"];
 
 const list = document.createElement("ul");
@@ -22,8 +27,9 @@ console.log(typeof map1);
 const inner = new DOMParser().parseFromString(list, "text/html").body.innerHTML; */
 
 // prettier-ignore
-document.querySelector('#app').innerHTML = //html
-`
+document.querySelector("#app").innerHTML =
+  //html
+  `
   <div>
   
   ${list.innerHTML}
@@ -36,7 +42,12 @@ document.querySelector('#app').innerHTML = //html
     <p class="read-the-docs">
       Click on the Vite logo to learn more
     </p>
+    <ventana-container></ventana-container>
   </div>
-`
-
+`;
+comportamientoBotonX(
+  document.querySelector("#exit_btn_container"),
+  document.querySelector("#equis_linea_1"),
+  document.querySelector("#equis_linea_2")
+);
 setupCounter(document.querySelector("#counter"));

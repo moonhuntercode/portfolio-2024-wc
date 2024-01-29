@@ -34,3 +34,14 @@
 a{
   text-decoration: none;
 }
+body,html{
+  width: 100%;
+  height: 100%;
+}
+body{
+  background: url('./imgs/luna-genial-1.gif');
+  background-size: cover;
+  /* background-size: contain; */
+  background-position: right;
+  background-repeat: no-repeat;
+}

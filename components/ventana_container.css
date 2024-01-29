@@ -1,0 +1,55 @@
+:root{
+    --size-of-main-container:200px;
+    --size_of_line_from_equis:3px;
+    --color-de-lineas-de-x:black;
+    --invert-color-de-lineas-de-x:white;
+}
+.ventana_container{
+    width: var(--size-of-main-container);
+    height: var(--size-of-main-container);
+    background: rgba(137, 43, 226, 0.562);
+    border-radius: 15px;
+    overflow: hidden;
+}
+#barra_de_titulo_container{
+    width: 100%;
+    background-color: rgb(140, 74, 255);
+    height: 15%;
+}
+#barra_de_titulo_container > #exit_btn_container{
+    width: 20%;
+    height: 100%;
+    float: right;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    flex-flow: column wrap;
+    place-content: center;
+    border: 3px solid black;
+
+    &:active{
+        filter: invert(-1);
+        background: black;
+    }
+    &:focus{
+        all: none;
+        text-decoration: none;
+    }
+}
+#exit_btn_container   #equis_linea_1, #equis_linea_2{
+    background: var(--color-de-lineas-de-x);
+    &:active{
+        background-color: var(--invert-color-de-lineas-de-x);
+    }
+}
+#exit_btn_container > #equis_linea_1{
+    width: var(--size_of_line_from_equis);
+    height: 100%;
+    transform: rotate(45deg);
+}
+#exit_btn_container > #equis_linea_2{
+    width: var(--size_of_line_from_equis);
+    
+    height: 100%;
+    transform: rotate(130deg);
+}
