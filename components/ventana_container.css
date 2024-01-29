@@ -28,8 +28,8 @@
     border: 3px solid black;
 
     &:active{
-        filter: invert(-1);
-        background: black;
+        
+        background-color: black;
     }
     &:focus{
         all: none;
@@ -37,10 +37,12 @@
     }
 }
 #exit_btn_container   #equis_linea_1, #equis_linea_2{
+
     background: var(--color-de-lineas-de-x);
-    &:active{
-        background-color: var(--invert-color-de-lineas-de-x);
-    }
+    border: black solid 1px;
+    /* box-shadow:black 1px 1px 1px 1px inset; */
+    
+
 }
 #exit_btn_container > #equis_linea_1{
     width: var(--size_of_line_from_equis);
@@ -49,7 +51,6 @@
 }
 #exit_btn_container > #equis_linea_2{
     width: var(--size_of_line_from_equis);
-    
     height: 100%;
     transform: rotate(130deg);
 }

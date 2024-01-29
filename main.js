@@ -1,11 +1,8 @@
 import "./style.css";
 import javascriptLogo from "./javascript.svg";
-import viteLogo from "/vite.svg";
+
 import { setupCounter } from "./counter.js";
-import {
-  VentanaContainer,
-  comportamientoBotonX,
-} from "./components/ventanaContainer.js";
+import { VentanaContainer } from "./components/ventanaContainer.js";
 
 const array1 = ["<p>hola</p>", "<p>hola2</p>", "<p>hola3</p>"];
 
@@ -45,9 +42,24 @@ document.querySelector("#app").innerHTML =
     <ventana-container></ventana-container>
   </div>
 `;
-comportamientoBotonX(
-  document.querySelector("#exit_btn_container"),
-  document.querySelector("#equis_linea_1"),
-  document.querySelector("#equis_linea_2")
-);
+
+const container = document.querySelector("#exit_btn_container");
+const linea1 = document.querySelector("#equis_linea_1");
+const linea2 = document.querySelector("#equis_linea_2");
+
+["mouseout", "mouseup", "mousedown"].forEach((event) => {
+  container.addEventListener(event, () => {
+    if (event == "mouseout") {
+      linea1.style.background = "black";
+      linea2.style.background = "black";
+    } else if (event == "mousedown") {
+      linea1.style.background = "white";
+      linea2.style.background = "white";
+    } else if (event == "mouseup") {
+      linea1.style.background = "black";
+    }
+  });
+});
+
+
 setupCounter(document.querySelector("#counter"));
