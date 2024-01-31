@@ -3,11 +3,12 @@
     --size_of_line_from_equis:3px;
     --color-de-lineas-de-x:black;
     --invert-color-de-lineas-de-x:white;
+    --file-color:rgb(208, 194, 6);
 }
 .ventana_container{
     width: var(--size-of-main-container);
     height: var(--size-of-main-container);
-    background: rgba(137, 43, 226, 0.562);
+    background: rgba(101, 10, 187, 0.816);
     border-radius: 15px;
     overflow: hidden;
 }
@@ -53,4 +54,52 @@
     width: var(--size_of_line_from_equis);
     height: 100%;
     transform: rotate(130deg);
+}
+.tab{
+    position: relative;
+    display: inline-flex;
+    background: rgba(101, 10, 187, 0.816);
+    height: 1.7rem;
+    width: 45%;
+    border-top-right-radius: 10px;
+    top: 3px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(46, 46, 46);
+    }
+    & .folder_icon{
+        display: inline-block;
+        width: 1.8em;
+        height: 70%;
+        box-shadow:  0 0 0 1.5px black;
+        border-radius: 5px;
+        margin-top: 5px;
+        margin-left: 5px;
+        background: var(--file-color);
+        position: relative;
+        z-index: 2;
+        &::before{
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+            content: "";
+            position: relative;
+            z-index: -1;
+            top: -4px;
+            left: -1.5px;
+            display: block;
+            width: 50%;
+            height: 45%;
+            border-top-left-radius:5px;
+            border-top-right-radius:3px;
+            background-color:var(--file-color);
+        }
+    }
+    & #ruta_inside_title{
+        height: 100%;
+        /* color: aqua; */
+        position: relative;    
+        display: inline-flex;
+        top: 3px;
+        left: 5px;
+    }
 }
