@@ -50,10 +50,12 @@ export const eventosVentanaContainer = (container, linea1, linea2) => {
         linea1.style.background = "black";
         linea2.style.background = "black";
       } else if (event == "mousedown") {
+        container.style.border = "3px solid white";
         linea1.style.background = "white";
         linea2.style.background = "white";
       } else if (event == "mouseup") {
         linea1.style.background = "black";
+        container.style.border = "3px solid black";
       }
     });
   });

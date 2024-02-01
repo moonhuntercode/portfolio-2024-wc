@@ -21,7 +21,7 @@
     width: 20%;
     height: 100%;
     float: right;
-    background: rgb(255, 255, 255);
+    background: #fff;
     cursor: pointer;
     display: flex;
     flex-flow: column wrap;
