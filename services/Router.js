@@ -38,14 +38,14 @@ const Router = {
         }
     }
 
-    if (pageElement) {
-      //   document.querySelector("main").children[0].remove(); // Remove old page |
-      const cache = document.querySelector("app");
-      cache.innerHTML = "";
-      cache.append(pageElement);
-      window.scrollX = 0;
-      window.scrollY = 0;
-    }
+    // if (pageElement) {
+    //   //   document.querySelector("main").children[0].remove(); // Remove old page |
+    //   const cache = document.querySelector("app");
+    //   cache.innerHTML = "";
+    //   cache.append(pageElement);
+    //   window.scrollX = 0;
+    //   window.scrollY = 0;
+    // }
   },
 };
 export default Router;

@@ -10,7 +10,7 @@
     height: var(--size-of-main-container);
     background: rgba(101, 10, 187, 0.816);
     border-radius: 15px;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 #barra_de_titulo_container{
     width: 100%;
@@ -101,7 +101,7 @@
         display: inline-flex;
         top: 3px;
         left: 5px;
-        
+
       
     }
 }

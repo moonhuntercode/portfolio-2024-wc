@@ -1,11 +1,30 @@
 import githubIcon from "../imgs/icons/git-icon-black.png";
-const array1 = [`${githubIcon}`, "<p>content1</p>", "<p>content2</p>", "<p>content3</p>"];
-
+import "./links_container.css";
+const img1 = document.createElement("img");
+img1.src = `${githubIcon}`;
+const array1 = [
+  `${img1.outerHTML}`,
+  "<p>content1</p>",
+  "<p>content2</p>",
+  "<p>content3</p>",
+];
+let myObj = [
+  { id: 1, name: "Github", src: `${githubIcon.src}` },
+  { id: 2, name: "two" },
+  { id: 3, name: "tree" },
+  { id: 4, name: "four" },
+];
+let newMyObj = myObj.reduce(function (result, currentObject) {
+  result[currentObject.id] = currentObject.name;
+  return result;
+}, {});
+console.log(newMyObj);
+console.log(typeof newMyObj);
 const list = document.createElement("ul");
 
-array1.forEach((element) => {
+array1.map((element, id) => {
   const listItem = document.createElement("li");
-  listItem.innerText = element;
+  listItem.innerHTML = element;
   list.appendChild(listItem);
 });
 export class LinksContainer extends HTMLElement {
@@ -14,6 +33,7 @@ export class LinksContainer extends HTMLElement {
     this.innerHTML =
       /*html*/
       `
+      
     <h1>Links</h1>
     ${list.outerHTML}
     `;
