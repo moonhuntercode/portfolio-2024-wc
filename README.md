@@ -6,3 +6,10 @@
 -later: with svelte maybe
 
 -ventana en beta,falta drag and drop
+
+    -❌ i trying rendering img in list item
+    
+    -❌ routing with errors
+
+
+    -✅ web component aplyed

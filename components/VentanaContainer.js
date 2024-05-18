@@ -1,5 +1,5 @@
 import "./ventana_container.css";
-
+import "./linksContainer.js";
 // console.log(typeof list);
 // Pass a function to map
 /* const map1 = array1
@@ -10,20 +10,11 @@ import "./ventana_container.css";
 console.log(typeof map1);
 const inner = new DOMParser().parseFromString(list, "text/html").body.innerHTML; */
 
-const array1 = ["<p>content1</p>", "<p>content2</p>", "<p>content3</p>"];
-
-const list = document.createElement("ul");
-
-array1.forEach((element) => {
-  const listItem = document.createElement("li");
-  listItem.innerText = element;
-  list.appendChild(listItem);
-});
 export class VentanaContainer extends HTMLElement {
   constructor() {
     super();
     this.innerHTML =
-      //html
+      /*html*/
       `
         <section class="ventana_container">
         <section id="barra_de_titulo_container">
@@ -37,7 +28,7 @@ export class VentanaContainer extends HTMLElement {
         <span id="equis_linea_2"></span>
         </div>
         </section>
-        ${list.innerText}
+        <links-container></links-container>
         </section>
         `;
   }

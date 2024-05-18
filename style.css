@@ -26,19 +26,21 @@
     background-color: #f9f9f9;
   }
 }
-
+/* start reset */
 *,*::after,*::before{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-a{
-  text-decoration: none;
-}
 body,html{
   width: var(--one-hundred-percent);
   height: var(--one-hundred-percent);
 }
+/* ends reset */
+a{
+  text-decoration: none;
+}
+
 body{
   background-image:url('./imgs/gato-purple-1.gif');
 

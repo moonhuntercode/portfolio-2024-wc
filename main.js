@@ -4,9 +4,12 @@ import {
 } from "./components/ventanaContainer.js";
 import Router from "./services/Router.js";
 
+// initial style for global app
+import "./style.css";
+
 // prettier-ignore
 document.querySelector("#app").innerHTML =
-  //html
+  /*html*/
   `
   <div>
   
