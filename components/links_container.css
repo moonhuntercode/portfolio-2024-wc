@@ -1,4 +1,10 @@
 img{
-    width: 40%;
+    width: 15%;
     background: white;
+}
+#links_container{
+    background: purple;
+    overflow-y: scroll;
+    list-style: none;
+    height: 100%;
 }

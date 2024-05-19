@@ -13,3 +13,6 @@
 
 
     -✅ web component aplyed
+
+    -✅ filosofiá aplicada aquí: si es repetitivo,se puede automatizar.
+    

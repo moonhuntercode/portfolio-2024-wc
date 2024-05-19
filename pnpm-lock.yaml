@@ -1,418 +1,553 @@
-lockfileVersion: '6.0'
+lockfileVersion: '9.0'
 
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-devDependencies:
-  vite:
-    specifier: ^5.0.8
-    version: 5.0.12
+importers:
+
+  .:
+    dependencies:
+      '@tsparticles/all':
+        specifier: ^3.4.0
+        version: 3.4.0
+      '@tsparticles/engine':
+        specifier: ^3.4.0
+        version: 3.4.0
+      modern-normalize:
+        specifier: ^2.0.0
+        version: 2.0.0
+    devDependencies:
+      vite:
+        specifier: ^5.0.8
+        version: 5.0.12
 
 packages:
 
-  /@esbuild/aix-ppc64@0.19.11:
+  '@esbuild/aix-ppc64@0.19.11':
     resolution: {integrity: sha512-FnzU0LyE3ySQk7UntJO4+qIiQgI7KoODnZg5xzXIrFJlKd2P2gwHsHY4927xj9y5PJmJSzULiUCWmv7iWnNa7g==}
     engines: {node: '>=12'}
     cpu: [ppc64]
     os: [aix]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/android-arm64@0.19.11:
+  '@esbuild/android-arm64@0.19.11':
     resolution: {integrity: sha512-aiu7K/5JnLj//KOnOfEZ0D90obUkRzDMyqd/wNAUQ34m4YUPVhRZpnqKV9uqDGxT7cToSDnIHsGooyIczu9T+Q==}
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [android]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/android-arm@0.19.11:
+  '@esbuild/android-arm@0.19.11':
     resolution: {integrity: sha512-5OVapq0ClabvKvQ58Bws8+wkLCV+Rxg7tUVbo9xu034Nm536QTII4YzhaFriQ7rMrorfnFKUsArD2lqKbFY4vw==}
     engines: {node: '>=12'}
     cpu: [arm]
     os: [android]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/android-x64@0.19.11:
+  '@esbuild/android-x64@0.19.11':
     resolution: {integrity: sha512-eccxjlfGw43WYoY9QgB82SgGgDbibcqyDTlk3l3C0jOVHKxrjdc9CTwDUQd0vkvYg5um0OH+GpxYvp39r+IPOg==}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [android]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/darwin-arm64@0.19.11:
+  '@esbuild/darwin-arm64@0.19.11':
     resolution: {integrity: sha512-ETp87DRWuSt9KdDVkqSoKoLFHYTrkyz2+65fj9nfXsaV3bMhTCjtQfw3y+um88vGRKRiF7erPrh/ZuIdLUIVxQ==}
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/darwin-x64@0.19.11:
+  '@esbuild/darwin-x64@0.19.11':
     resolution: {integrity: sha512-fkFUiS6IUK9WYUO/+22omwetaSNl5/A8giXvQlcinLIjVkxwTLSktbF5f/kJMftM2MJp9+fXqZ5ezS7+SALp4g==}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/freebsd-arm64@0.19.11:
+  '@esbuild/freebsd-arm64@0.19.11':
     resolution: {integrity: sha512-lhoSp5K6bxKRNdXUtHoNc5HhbXVCS8V0iZmDvyWvYq9S5WSfTIHU2UGjcGt7UeS6iEYp9eeymIl5mJBn0yiuxA==}
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [freebsd]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/freebsd-x64@0.19.11:
+  '@esbuild/freebsd-x64@0.19.11':
     resolution: {integrity: sha512-JkUqn44AffGXitVI6/AbQdoYAq0TEullFdqcMY/PCUZ36xJ9ZJRtQabzMA+Vi7r78+25ZIBosLTOKnUXBSi1Kw==}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [freebsd]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/linux-arm64@0.19.11:
+  '@esbuild/linux-arm64@0.19.11':
     resolution: {integrity: sha512-LneLg3ypEeveBSMuoa0kwMpCGmpu8XQUh+mL8XXwoYZ6Be2qBnVtcDI5azSvh7vioMDhoJFZzp9GWp9IWpYoUg==}
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/linux-arm@0.19.11:
+  '@esbuild/linux-arm@0.19.11':
     resolution: {integrity: sha512-3CRkr9+vCV2XJbjwgzjPtO8T0SZUmRZla+UL1jw+XqHZPkPgZiyWvbDvl9rqAN8Zl7qJF0O/9ycMtjU67HN9/Q==}
     engines: {node: '>=12'}
     cpu: [arm]
     os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/linux-ia32@0.19.11:
+  '@esbuild/linux-ia32@0.19.11':
     resolution: {integrity: sha512-caHy++CsD8Bgq2V5CodbJjFPEiDPq8JJmBdeyZ8GWVQMjRD0sU548nNdwPNvKjVpamYYVL40AORekgfIubwHoA==}
     engines: {node: '>=12'}
     cpu: [ia32]
     os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/linux-loong64@0.19.11:
+  '@esbuild/linux-loong64@0.19.11':
     resolution: {integrity: sha512-ppZSSLVpPrwHccvC6nQVZaSHlFsvCQyjnvirnVjbKSHuE5N24Yl8F3UwYUUR1UEPaFObGD2tSvVKbvR+uT1Nrg==}
     engines: {node: '>=12'}
     cpu: [loong64]
     os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/linux-mips64el@0.19.11:
+  '@esbuild/linux-mips64el@0.19.11':
     resolution: {integrity: sha512-B5x9j0OgjG+v1dF2DkH34lr+7Gmv0kzX6/V0afF41FkPMMqaQ77pH7CrhWeR22aEeHKaeZVtZ6yFwlxOKPVFyg==}
     engines: {node: '>=12'}
     cpu: [mips64el]
     os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/linux-ppc64@0.19.11:
+  '@esbuild/linux-ppc64@0.19.11':
     resolution: {integrity: sha512-MHrZYLeCG8vXblMetWyttkdVRjQlQUb/oMgBNurVEnhj4YWOr4G5lmBfZjHYQHHN0g6yDmCAQRR8MUHldvvRDA==}
     engines: {node: '>=12'}
     cpu: [ppc64]
     os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/linux-riscv64@0.19.11:
+  '@esbuild/linux-riscv64@0.19.11':
     resolution: {integrity: sha512-f3DY++t94uVg141dozDu4CCUkYW+09rWtaWfnb3bqe4w5NqmZd6nPVBm+qbz7WaHZCoqXqHz5p6CM6qv3qnSSQ==}
     engines: {node: '>=12'}
     cpu: [riscv64]
     os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/linux-s390x@0.19.11:
+  '@esbuild/linux-s390x@0.19.11':
     resolution: {integrity: sha512-A5xdUoyWJHMMlcSMcPGVLzYzpcY8QP1RtYzX5/bS4dvjBGVxdhuiYyFwp7z74ocV7WDc0n1harxmpq2ePOjI0Q==}
     engines: {node: '>=12'}
     cpu: [s390x]
     os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/linux-x64@0.19.11:
+  '@esbuild/linux-x64@0.19.11':
     resolution: {integrity: sha512-grbyMlVCvJSfxFQUndw5mCtWs5LO1gUlwP4CDi4iJBbVpZcqLVT29FxgGuBJGSzyOxotFG4LoO5X+M1350zmPA==}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/netbsd-x64@0.19.11:
+  '@esbuild/netbsd-x64@0.19.11':
     resolution: {integrity: sha512-13jvrQZJc3P230OhU8xgwUnDeuC/9egsjTkXN49b3GcS5BKvJqZn86aGM8W9pd14Kd+u7HuFBMVtrNGhh6fHEQ==}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [netbsd]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/openbsd-x64@0.19.11:
+  '@esbuild/openbsd-x64@0.19.11':
     resolution: {integrity: sha512-ysyOGZuTp6SNKPE11INDUeFVVQFrhcNDVUgSQVDzqsqX38DjhPEPATpid04LCoUr2WXhQTEZ8ct/EgJCUDpyNw==}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [openbsd]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/sunos-x64@0.19.11:
+  '@esbuild/sunos-x64@0.19.11':
     resolution: {integrity: sha512-Hf+Sad9nVwvtxy4DXCZQqLpgmRTQqyFyhT3bZ4F2XlJCjxGmRFF0Shwn9rzhOYRB61w9VMXUkxlBy56dk9JJiQ==}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [sunos]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/win32-arm64@0.19.11:
+  '@esbuild/win32-arm64@0.19.11':
     resolution: {integrity: sha512-0P58Sbi0LctOMOQbpEOvOL44Ne0sqbS0XWHMvvrg6NE5jQ1xguCSSw9jQeUk2lfrXYsKDdOe6K+oZiwKPilYPQ==}
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/win32-ia32@0.19.11:
+  '@esbuild/win32-ia32@0.19.11':
     resolution: {integrity: sha512-6YOrWS+sDJDmshdBIQU+Uoyh7pQKrdykdefC1avn76ss5c+RN6gut3LZA4E2cH5xUEp5/cA0+YxRaVtRAb0xBg==}
     engines: {node: '>=12'}
     cpu: [ia32]
     os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@esbuild/win32-x64@0.19.11:
+  '@esbuild/win32-x64@0.19.11':
     resolution: {integrity: sha512-vfkhltrjCAb603XaFhqhAF4LGDi2M4OrCRrFusyQ+iTLQ/o60QQXxc9cZC/FFpihBI9N1Grn6SMKVJ4KP7Fuiw==}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@rollup/rollup-android-arm-eabi@4.9.6:
+  '@rollup/rollup-android-arm-eabi@4.9.6':
     resolution: {integrity: sha512-MVNXSSYN6QXOulbHpLMKYi60ppyO13W9my1qogeiAqtjb2yR4LSmfU2+POvDkLzhjYLXz9Rf9+9a3zFHW1Lecg==}
     cpu: [arm]
     os: [android]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@rollup/rollup-android-arm64@4.9.6:
+  '@rollup/rollup-android-arm64@4.9.6':
     resolution: {integrity: sha512-T14aNLpqJ5wzKNf5jEDpv5zgyIqcpn1MlwCrUXLrwoADr2RkWA0vOWP4XxbO9aiO3dvMCQICZdKeDrFl7UMClw==}
     cpu: [arm64]
     os: [android]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@rollup/rollup-darwin-arm64@4.9.6:
+  '@rollup/rollup-darwin-arm64@4.9.6':
     resolution: {integrity: sha512-CqNNAyhRkTbo8VVZ5R85X73H3R5NX9ONnKbXuHisGWC0qRbTTxnF1U4V9NafzJbgGM0sHZpdO83pLPzq8uOZFw==}
     cpu: [arm64]
     os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@rollup/rollup-darwin-x64@4.9.6:
+  '@rollup/rollup-darwin-x64@4.9.6':
     resolution: {integrity: sha512-zRDtdJuRvA1dc9Mp6BWYqAsU5oeLixdfUvkTHuiYOHwqYuQ4YgSmi6+/lPvSsqc/I0Omw3DdICx4Tfacdzmhog==}
     cpu: [x64]
     os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@rollup/rollup-linux-arm-gnueabihf@4.9.6:
+  '@rollup/rollup-linux-arm-gnueabihf@4.9.6':
     resolution: {integrity: sha512-oNk8YXDDnNyG4qlNb6is1ojTOGL/tRhbbKeE/YuccItzerEZT68Z9gHrY3ROh7axDc974+zYAPxK5SH0j/G+QQ==}
     cpu: [arm]
     os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@rollup/rollup-linux-arm64-gnu@4.9.6:
+  '@rollup/rollup-linux-arm64-gnu@4.9.6':
     resolution: {integrity: sha512-Z3O60yxPtuCYobrtzjo0wlmvDdx2qZfeAWTyfOjEDqd08kthDKexLpV97KfAeUXPosENKd8uyJMRDfFMxcYkDQ==}
     cpu: [arm64]
     os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@rollup/rollup-linux-arm64-musl@4.9.6:
+  '@rollup/rollup-linux-arm64-musl@4.9.6':
     resolution: {integrity: sha512-gpiG0qQJNdYEVad+1iAsGAbgAnZ8j07FapmnIAQgODKcOTjLEWM9sRb+MbQyVsYCnA0Im6M6QIq6ax7liws6eQ==}
     cpu: [arm64]
     os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@rollup/rollup-linux-riscv64-gnu@4.9.6:
+  '@rollup/rollup-linux-riscv64-gnu@4.9.6':
     resolution: {integrity: sha512-+uCOcvVmFUYvVDr27aiyun9WgZk0tXe7ThuzoUTAukZJOwS5MrGbmSlNOhx1j80GdpqbOty05XqSl5w4dQvcOA==}
     cpu: [riscv64]
     os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@rollup/rollup-linux-x64-gnu@4.9.6:
+  '@rollup/rollup-linux-x64-gnu@4.9.6':
     resolution: {integrity: sha512-HUNqM32dGzfBKuaDUBqFB7tP6VMN74eLZ33Q9Y1TBqRDn+qDonkAUyKWwF9BR9unV7QUzffLnz9GrnKvMqC/fw==}
     cpu: [x64]
     os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@rollup/rollup-linux-x64-musl@4.9.6:
+  '@rollup/rollup-linux-x64-musl@4.9.6':
     resolution: {integrity: sha512-ch7M+9Tr5R4FK40FHQk8VnML0Szi2KRujUgHXd/HjuH9ifH72GUmw6lStZBo3c3GB82vHa0ZoUfjfcM7JiiMrQ==}
     cpu: [x64]
     os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@rollup/rollup-win32-arm64-msvc@4.9.6:
+  '@rollup/rollup-win32-arm64-msvc@4.9.6':
     resolution: {integrity: sha512-VD6qnR99dhmTQ1mJhIzXsRcTBvTjbfbGGwKAHcu+52cVl15AC/kplkhxzW/uT0Xl62Y/meBKDZvoJSJN+vTeGA==}
     cpu: [arm64]
     os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@rollup/rollup-win32-ia32-msvc@4.9.6:
+  '@rollup/rollup-win32-ia32-msvc@4.9.6':
     resolution: {integrity: sha512-J9AFDq/xiRI58eR2NIDfyVmTYGyIZmRcvcAoJ48oDld/NTR8wyiPUu2X/v1navJ+N/FGg68LEbX3Ejd6l8B7MQ==}
     cpu: [ia32]
     os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@rollup/rollup-win32-x64-msvc@4.9.6:
+  '@rollup/rollup-win32-x64-msvc@4.9.6':
     resolution: {integrity: sha512-jqzNLhNDvIZOrt69Ce4UjGRpXJBzhUBzawMwnaDAwyHriki3XollsewxWzOzz+4yOFDkuJHtTsZFwMxhYJWmLQ==}
     cpu: [x64]
     os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /@types/estree@1.0.5:
+  '@tsparticles/all@3.4.0':
+    resolution: {integrity: sha512-KcbRmf+1sdKmlsMWXZJJujtUtD92kxcXMHun63sBFdFkWo/7qRk4KXj36DA91/80dEmOvDkvlA2evz9MRvIjYg==}
+
+  '@tsparticles/basic@3.4.0':
+    resolution: {integrity: sha512-a0HxG0GOhXof7NDqcqdyu9XpmCAQ0M402YECz/jsH4CkBpz3ut0BrgnyjT6Xcqna3pR1Kv1m516/sV2fwNnnQw==}
+
+  '@tsparticles/effect-bubble@3.4.0':
+    resolution: {integrity: sha512-SdIUrR+AM28tBV00T331Y3438GEbqBd9TxMDIE1GO6IbkBxluTs7zwNTMHYsOZuqwwSlbRqAH4WSJ/2T8jWQNw==}
+
+  '@tsparticles/effect-trail@3.4.0':
+    resolution: {integrity: sha512-RAy8IFJpZQUbiscU4o530G0Y4Bt5lui2Db/tfpJ5YE/3fOeu8h7Sjn9FI/6kbRJWWUaU1dBgFIgu8N6eg2O9Jg==}
+
+  '@tsparticles/engine@3.4.0':
+    resolution: {integrity: sha512-OqoMZYJCoiihNnexnnSmInEMNXr0Z8CmE1HSiFVeifgK1qUlonTFe2G09KdvNT8ZdvmIC513yTpFJNDbnMZYRQ==}
+
+  '@tsparticles/interaction-external-attract@3.4.0':
+    resolution: {integrity: sha512-6enSRkoXyK0JvW8bJuj2xAUuu9VzDiFvRCPaL+5dcLcDpjheh8nWpGzrgo8p9VxLL5VRYv7PxnYPMviBMQ7WzA==}
+
+  '@tsparticles/interaction-external-bounce@3.4.0':
+    resolution: {integrity: sha512-yiTJD8t+Uzpo9lyhHlaC+azu49dJtrFVhbVZdDaiTNm1L1stFQBrc+9NY63BfQDEkDmSz4uWvQXQMru2KY+40g==}
+
+  '@tsparticles/interaction-external-bubble@3.4.0':
+    resolution: {integrity: sha512-CQ1nC6Or8qAAkH7A2x3FkP473caM7UWQiiN4zR4JtSZu06+2Y0V09LXguQKx1RWDehgRvkylQ4Dgur4a5qNb8w==}
+
+  '@tsparticles/interaction-external-connect@3.4.0':
+    resolution: {integrity: sha512-UBzs0iV7wLbrL2VIuCT25asUjjXGCiVC/kCM5NtG7+gd6wDB8DbjZPjHviI7AnEnJdBPeZ2eeYIVuLiO1Xpd3A==}
+
+  '@tsparticles/interaction-external-grab@3.4.0':
+    resolution: {integrity: sha512-BsnwN1x+nYUCD7iSu/wLX//awAka1Vf5gnynBqgmz0odAlN3Wv2i9iR/JkzDQynmGLJPHffYgkXC8LWXgZZznQ==}
+
+  '@tsparticles/interaction-external-particle@3.4.0':
+    resolution: {integrity: sha512-3fertLeDMT3SlA4jawtnT2kpoGQHRhCEoSvf7AXc1JbOCAoSP3w10Mc/OBWqqa+pttydaA16rvzF2NVfbTBLfA==}
+
+  '@tsparticles/interaction-external-pause@3.4.0':
+    resolution: {integrity: sha512-B6xvHLLktN9BHPcIbAxc7F68aDOnieKAxPwqSuvRtQrEP0Q3xcvTkw1TBwzehr9mZH+0SVGzPfH8BMWI4EP1Xg==}
+
+  '@tsparticles/interaction-external-pop@3.4.0':
+    resolution: {integrity: sha512-hB+pspNL1jy23P/84Xsp4kxgOiUFEn8r2+NLEbGxZEzDUncz0TrPKTr1Ayywe41Uhiszrq10pJRnJguVYinvSw==}
+
+  '@tsparticles/interaction-external-push@3.4.0':
+    resolution: {integrity: sha512-SriLK1X45CaLwzxjtDo5nCGtF8lwPwK5zYO6+UU+9djUzbh/dBlXQr63ovm/jYPE+yGPRxAhJLdiHpss6aaavQ==}
+
+  '@tsparticles/interaction-external-remove@3.4.0':
+    resolution: {integrity: sha512-9W4v8s3J+4l9AXpAvvAMbdG0G6y0HHA+/ZmP/9CtVc1fqVDDrMHL0ojXuVlGMxVjKgwuO28x8+jOAuM7PHiSsQ==}
+
+  '@tsparticles/interaction-external-repulse@3.4.0':
+    resolution: {integrity: sha512-5tM8uLGsKMUhZ2+Acy8XHrw1MN+apqNBhfVYoZ5UdH2soX1xAicSCrEpSObiS1xjCmkpRlkfls3Ygo4FHz3eSg==}
+
+  '@tsparticles/interaction-external-slow@3.4.0':
+    resolution: {integrity: sha512-bBlKG3VS8g64+HiDlu9RbWt/3bIepEu25w8G2zTB+GQMBqDpKsMioWWKNT66w/661U1BlvUZWHaJE/OdMCZTZw==}
+
+  '@tsparticles/interaction-external-trail@3.4.0':
+    resolution: {integrity: sha512-hpcfv04zto67kjG7X1nx+Bv9eolkUBNLHcy9gSgco83/ARNKLgcOA+xYz5OFzZ5ImKyGZQggzYOPSwBZx+9MQg==}
+
+  '@tsparticles/interaction-light@3.4.0':
+    resolution: {integrity: sha512-OMIj0xfcGJxIiu2OgIj+boKV3l1/aqqDl/4eZl4MjwC6xY6nynPC44jVrok8u2FkmYUU6IvqCXa5Edi+lyaY+Q==}
+
+  '@tsparticles/interaction-particles-attract@3.4.0':
+    resolution: {integrity: sha512-Ye6f37AZYaMExjsZSoOEMsTSFIPs3ZZCxiQmiCeH+gNK8yGXJDLkWwZUN0S7S4GJDf24Nt4S+gunKJxO8C3qGQ==}
+
+  '@tsparticles/interaction-particles-collisions@3.4.0':
+    resolution: {integrity: sha512-JmDyXlGS6vSrUxvgMf/t6hsnsAS4YRc9rZM3CcmfyUM9UG9/+vef/cekNDSVRzszk5KcFF70w2FLJ6EhYs0ecA==}
+
+  '@tsparticles/interaction-particles-links@3.4.0':
+    resolution: {integrity: sha512-2UhzNsZCSF69L0PGwlJARNx3qrMdSrl5p/TgO5Q5w7iwBU1x/W27O+TDQvNdMHsOLPPUomUI+jJfRXY2snqp3Q==}
+
+  '@tsparticles/interaction-particles-repulse@3.4.0':
+    resolution: {integrity: sha512-pKCbhyaMwqaRPG9+iMp3LvMV0O7dHp5dmxpdvg8WV/DOHgejmAPHcSUXKYyuRs43TT5les+KOIV5L0muPpUwog==}
+
+  '@tsparticles/move-base@3.4.0':
+    resolution: {integrity: sha512-4P9CzgVN7INogAvqkg/cEA+6WKeGUAtsgljJ2rUADgNBiScW1oJZAw/004AZiOlonLRiUZujUCNS4zlAg62ZvQ==}
+
+  '@tsparticles/move-parallax@3.4.0':
+    resolution: {integrity: sha512-5GdTxro5y3+GFNabaHPFuJl2zOpiyDZJ0D96QAY/sRnI5NNASj7n9QgUeViPdAsOOIgrHgIMl43MqJSUbuK4tw==}
+
+  '@tsparticles/path-curl-noise@3.4.0':
+    resolution: {integrity: sha512-e+adBWVgWkuORHIjnlgIFEl1fehtozsIH8/hoBZGu6eMdIM9Q3nR3aKwApXKTgRswomC+1VtF4xiXA882tmyBg==}
+
+  '@tsparticles/path-curves@3.4.0':
+    resolution: {integrity: sha512-pv70ZU/gT0LiSQPCgjcKOlPBvPTBhn3acbDwjZtgOqjN1XU7tPoaYv499rwy7Ersw6qILe7pyM2+p8NVIK4/Lw==}
+
+  '@tsparticles/path-perlin-noise@3.4.0':
+    resolution: {integrity: sha512-1+thcEIaBX8H9Q+Ju05LKCDDVIXCw6IaMYeRLDcGtziCp3O4to2Nlszbj109XSoxaf0o06dxyvF4DSCLw9QU6A==}
+
+  '@tsparticles/path-polygon@3.4.0':
+    resolution: {integrity: sha512-mrLUh6SOViow8Qh0GT/4lyVOYF9+QmbHqM+mBA4ZGi2HNSIvBa3WZqufh42Ync0Sy1AfvrblF7OEAYfOZe4Cgw==}
+
+  '@tsparticles/path-simplex-noise@3.4.0':
+    resolution: {integrity: sha512-xkjsQUpl8NWW+XyfgVXlI5m094kWVk5udDf2/daYEC/PIuduvFtrKcA8Hre2AoS2yuXK9KYUQupILoHgNVx/8w==}
+
+  '@tsparticles/path-svg@3.4.0':
+    resolution: {integrity: sha512-xUOod/Lyu1hyv69c2QJbRuX1PIve60CfAdeq7/IzqOUWmW6uSb+nA3UTh2xkX3Cr/xa47c8uIqY0rLDCx9n5zQ==}
+
+  '@tsparticles/path-zig-zag@3.4.0':
+    resolution: {integrity: sha512-UDd/Ghl/eceWRMqgEg/qyLce3lvplwJCkuQzmdLB2w1r9hwf3Rtj2/DcXqZx6AsBc5bTg7z1AC+TKKfjF2W5bg==}
+
+  '@tsparticles/perlin-noise@3.4.0':
+    resolution: {integrity: sha512-pi/u6AXO/36o54KadX2SooElxOijDJ05DTltyGCofaE8bWJCe5tfVmIy9tbsBmgowvoq7HKTRzw7klu//utGSg==}
+
+  '@tsparticles/pjs@3.4.0':
+    resolution: {integrity: sha512-xi/uZVo3KlRYvmvSGZvsKgPQX83wZMUwDGkDcA9YGacKU9/xEQ35erZvIk1fRo6Qfdgtxfd6bYk8Hc/rYH0mUQ==}
+
+  '@tsparticles/plugin-absorbers@3.4.0':
+    resolution: {integrity: sha512-yFSqlTYWWjItTuVA9VPpGkzA1VqUFhTg/XrrwYRZnIPnfvFMnguwQIPvYkgubEJT9/EurWTyJ/AnCdbi+b7hSQ==}
+
+  '@tsparticles/plugin-canvas-mask@3.4.0':
+    resolution: {integrity: sha512-fybLa2fXIafkH/JrhKSWZWY4Ik4USUzmQG5lK5GLaiTLCAmBLZxw30GgW4IVlMZFt+f2q2XpfpqxNS5/m8YowQ==}
+
+  '@tsparticles/plugin-easing-back@3.4.0':
+    resolution: {integrity: sha512-FYr8G7GINYzIU8fJ3TJHF5ARbkatXICDsDgIWZZ3upPSpaej15MpYoIeaeDeabNiibFLaro51t3TJ8s9jDep4g==}
+
+  '@tsparticles/plugin-easing-circ@3.4.0':
+    resolution: {integrity: sha512-3ifoR7ym87hfsiZ6IMxzil1MMcOYU9KhXW8DqGH0zlzecpyZKlZP9UP9mGPZz0dnYKLXBOFG83OF5w8a8CF5AQ==}
+
+  '@tsparticles/plugin-easing-cubic@3.4.0':
+    resolution: {integrity: sha512-29PZTKpuizopy10yIwy7X7tcNVeLX1k/9OvCl8Y1/8hF7zANyS0cHS2okmh5TyQsut/6SXRdriqJ4aFNQX6C8Q==}
+
+  '@tsparticles/plugin-easing-expo@3.4.0':
+    resolution: {integrity: sha512-/qKN0q/btoX1EmX5u3ix+d5uiaSW2hNbNd7pVTfFZP4Xa+tnzg0Fyb//r2VsLWk5KaQcSDjwrAZzcbVvvYg0ew==}
+
+  '@tsparticles/plugin-easing-linear@3.4.0':
+    resolution: {integrity: sha512-OLC5USo/gyMspGYACUSFDAuCUr8b/H2s4oytZGx4EaNMDxi0c/ewTMK/NBLO8pDKFXUnmFrTt0F2bB4xzAgs+A==}
+
+  '@tsparticles/plugin-easing-quad@3.4.0':
+    resolution: {integrity: sha512-JgZDeoES8ONrt+pKdDRrUkTKJRfjgRpTlLgr2KqqadI+lSOQIw/QJuXfCu25/47wJLcPUxP1melclp6X/IhNog==}
+
+  '@tsparticles/plugin-easing-quart@3.4.0':
+    resolution: {integrity: sha512-/zxtTwZrw8f7QvHxIvGiJvw1827u5aA20KyXQT+rZ4ULp5eAa+iqSPYcGXhu3RzN8gEKIOYUxmAwS6OR9kRN3A==}
+
+  '@tsparticles/plugin-easing-quint@3.4.0':
+    resolution: {integrity: sha512-P5s9VDDp5drJs4YDuZRlp31MPM/+36ZQdWF0171pG6VRZSqCo2Wxq4tCmZKX/A7up0b4N0kRXM3BbKbLf+VA1A==}
+
+  '@tsparticles/plugin-easing-sine@3.4.0':
+    resolution: {integrity: sha512-WVi6VqO1bYOO8C7VuAT7Vpq5KUEmFNMr2++pRwLGj1TyaB1Rcu7iUpA1BG0sg/kpUVOKzHXA9eO/2b41bYyaxA==}
+
+  '@tsparticles/plugin-emitters-shape-canvas@3.4.0':
+    resolution: {integrity: sha512-29DZJLObd9eoMdKB7P5vs/Zb/tPP3wMrJWfI/W+Q5sEJmAVQMVv1JjDy8K+TTtnLhbRkutWQTjgetXfP35Xvow==}
+
+  '@tsparticles/plugin-emitters-shape-circle@3.4.0':
+    resolution: {integrity: sha512-bs8E1GL3n/YlWtDBuBFo8CgT7n5a193uno9EaHLiAwgdFcp5yrz9D+3tX4WtVlAiMnfTdWhanFPoiBYYdACB0w==}
+
+  '@tsparticles/plugin-emitters-shape-path@3.4.0':
+    resolution: {integrity: sha512-hPXaYpxC+IZiFDz/9nrV1jhct318hOsKHp6LMMsdxP7rDxqvoe4bl5BAtVXVjnMadxBLlhwlwuRlREY0hX8kKQ==}
+
+  '@tsparticles/plugin-emitters-shape-polygon@3.4.0':
+    resolution: {integrity: sha512-Dzf64yMugPetYAp0KwMwnunRjMiqKApn2iM9tLG+PfBtuSu6b3WHBRQGdUP/kB5EBxWxTWmLtCavKsbiYTH+gQ==}
+
+  '@tsparticles/plugin-emitters-shape-square@3.4.0':
+    resolution: {integrity: sha512-ne4qKSNbc3fqLFClCUNd7g5qhuChxLVwj+MAe/+4ECYjDQBIrGcJrH2mgmdi5KpOPqKtnIQpC4etwJ084w1UMA==}
+
+  '@tsparticles/plugin-emitters@3.4.0':
+    resolution: {integrity: sha512-B3I12hcELE+MDi2jmSFHiC5x8/c4n412VZFOAJcimMfb919gaF1mC/Ac9yR8OCmIdEXYDjf/dyg8xUtSUVlV2g==}
+
+  '@tsparticles/plugin-export-image@3.4.0':
+    resolution: {integrity: sha512-fmYbNmDy48h8UiIuwjAvF064J/tlqG6yFz7kIrofoY2VPkmjLoSV0Q8w3otPdLzaoq8XBWxEuLAq/i2F6Y/zew==}
+
+  '@tsparticles/plugin-export-json@3.4.0':
+    resolution: {integrity: sha512-TMH86otjIYhHNEUamOkEpfqTt/Yk5ZP7uf59ZZLIrdd6uC7xPXUVAT3FZcY379DK6Qc50+f3eTClfCREoqfHVQ==}
+
+  '@tsparticles/plugin-export-video@3.4.0':
+    resolution: {integrity: sha512-FMOPZaC0WNl+xPKN0htKbL6asm7J/L9fKLXazxYtqQ0AeSDEoYDufBy4Q0iRRIEkfNzicyiTrTObAzE8QMZD0w==}
+
+  '@tsparticles/plugin-hsv-color@3.4.0':
+    resolution: {integrity: sha512-p5di0M3lK3v+Q7ABL66Vh1Tyivgsd08iQY2teRySD3rx/DJfVUQUSln+0IqcCsS5WEMNDXCtLx2GOSZQrco6Hg==}
+
+  '@tsparticles/plugin-infection@3.4.0':
+    resolution: {integrity: sha512-fZjj/14WD1Pp340tCFTWbnOEKBNimNRIpdtrMgNbqnciCL7X2uJ8hZ1a3a+dR1auvkmtr1ARt5i2ydN84Tu8yQ==}
+
+  '@tsparticles/plugin-motion@3.4.0':
+    resolution: {integrity: sha512-EJd3ceR3HKQzp1zFZI1w1EFizrcJ07p5jQvoV7wg6aIYcQWtHqNSSuQBAFgjvAaRk8Y6mtflP1Jybs3R3F0u6g==}
+
+  '@tsparticles/plugin-poisson-disc@3.4.0':
+    resolution: {integrity: sha512-OQlxCzU4buZJmLiVX/dP9dEOVhOBf2xRRjmuj2lhQ3JuY++0AU5mE9ZlgCR/bKdqH9E4nwq5YAmw42ZoN3YIrA==}
+
+  '@tsparticles/plugin-polygon-mask@3.4.0':
+    resolution: {integrity: sha512-djdsGJ835Nu5c2t4TlnXHkdS9HFDBhUpMtDavu8CQVRQeMsBeHCQ9swxjqZKbyQWkuMUdlFxlCZPpAwgU+T8tQ==}
+
+  '@tsparticles/plugin-sounds@3.4.0':
+    resolution: {integrity: sha512-IMc/0w4AjBRZprhD9wv89j7WE3gjVXqzu99QZV14VpgXLbgGjyskSn7cWw/PZVhsmWMBjXS3x6koknxtbn+ZFA==}
+
+  '@tsparticles/shape-arrow@3.4.0':
+    resolution: {integrity: sha512-nIKxmXBuNvNuobEEzQOHvXdG6/dPPkXrmESS0Ega5rQ/IubCjiW8dROTWEmE+igm8nXb/OMA4CLrS/ClPmgMhg==}
+
+  '@tsparticles/shape-cards@3.4.0':
+    resolution: {integrity: sha512-rfr+O3HNTM5LhqtdR9XkkM6VKKCcrtRmGk4OFQRrnknQ70kwaFgrajynn61qXhtCi/D4g3mA2/iyFQD/KXDTsw==}
+
+  '@tsparticles/shape-circle@3.4.0':
+    resolution: {integrity: sha512-X1ynt8h7bO+xep12Vkxeo2fImbKzLMEZr0qY3vKZzhHcy0/lxoo505pwyVL2+V98eZNOu9fmQM7vlIt/0FGTcg==}
+
+  '@tsparticles/shape-cog@3.4.0':
+    resolution: {integrity: sha512-sMJEwO96ozM8DuBYdTEQvez0fPW4WXWROB7glHs7Q2iC2k/6X6WTSsDFZSCNMdvs9pEk2aoGM/k89A5Tl337TA==}
+
+  '@tsparticles/shape-emoji@3.4.0':
+    resolution: {integrity: sha512-fzuRdwzikhiE7bgagNJVFccvipy7+bcG6PGvfGmJO3FQIwYSTRV2mJVsI/uPQkBUGJyzJPncp7FzEix/D3PDCA==}
+
+  '@tsparticles/shape-heart@3.4.0':
+    resolution: {integrity: sha512-/8iWjHEwTw1m9kcEQ1LRKxY9+2UzT14Ka1UlqOFIrS5G2XacIU/ct1Gaxtn76VL2sScPQXEcuZpsoe64rTZTww==}
+
+  '@tsparticles/shape-image@3.4.0':
+    resolution: {integrity: sha512-US7MYYFP0iMqWs9JiPNmqFSIxmsqkTF6gW6VvDDGtBEUxw3wubSEln3Gc3PQBpa/Tq0jwkUfd1/zkyahOrycUw==}
+
+  '@tsparticles/shape-infinity@3.4.0':
+    resolution: {integrity: sha512-6Mgiy8cUbdocx8tmXNEA1s6OcreH09lnnBW71xK4mpl1DXQ9PZKVjMZ/pMs2NB3dO9VoycfcC31SxlI9Drv/DQ==}
+
+  '@tsparticles/shape-line@3.4.0':
+    resolution: {integrity: sha512-pXItuUBtIatcQQLp+CS1HZjHtpGVqswFxDaFZv0b9Ulx+7I48i4T5r6LCF2ngo+3xcT+rDdAF/Ca/oCunztBBA==}
+
+  '@tsparticles/shape-path@3.4.0':
+    resolution: {integrity: sha512-r9a/P/OXYGJR4QiH2svhMRf5IsMFWmSMh3WbFW2CcfK0gb1ZUVPcpWaL/KF+AyRiDaAZ/MlioGsEmgXLFKe9SA==}
+
+  '@tsparticles/shape-polygon@3.4.0':
+    resolution: {integrity: sha512-qA7nXwWufVZLyS1CT9cFNqcjgLRQQnILc3w1gkH7B80uGYg4bLgQcOZiI7OwifOFkgyI6Mvb0XRntl+NQaDDRA==}
+
+  '@tsparticles/shape-rounded-polygon@3.4.0':
+    resolution: {integrity: sha512-j2OERvZML30cMmP8dmLWMZ6F7l12hlPuJ6MGgzP1jOVhwsQl2bwv01AJdDkbZ6QLK6YcdofB5y4e/gvzPmA8ew==}
+
+  '@tsparticles/shape-rounded-rect@3.4.0':
+    resolution: {integrity: sha512-tSYW+dUju2Ro6jzFC+P+cHUvMY2MAVIpWujWTiLbxmSn/2KnjxJUU/oxBlCcNRFn+sSZggTM+2UCDnG5ONeLoA==}
+
+  '@tsparticles/shape-spiral@3.4.0':
+    resolution: {integrity: sha512-P8QRdSRCmoIHEMaCu+BjBlwulbU4cdXUTbogtX3IqkhCu2Kmva18Mc++hFRU6EjaojgwpgftNTfv54Z6n2QidA==}
+
+  '@tsparticles/shape-square@3.4.0':
+    resolution: {integrity: sha512-pUXAbSnW5aTMFFjAP3GHMxqbah3ADibuQcEmIgts5tNUKY8Bl0Syx5pllpe81z2AMJCsQncC15/M19DU/H+YXw==}
+
+  '@tsparticles/shape-star@3.4.0':
+    resolution: {integrity: sha512-Gy4FLvVh0qBTVAZbBeV3MfsofYXycxO60/5HqNePsG3+sO/o5DKGZqf/Fw1Cacrb1QYg5A59P/122MZTMnLqEA==}
+
+  '@tsparticles/shape-text@3.4.0':
+    resolution: {integrity: sha512-5Ney+vAoEZ1uM6z1QkJG+za55SdrTn+91ChGnuixUg8dbu+jGro9wqrywigYe6RNNCMxVmmxr455c9ub0hTLqw==}
+
+  '@tsparticles/simplex-noise@3.4.0':
+    resolution: {integrity: sha512-95j7xIoyApKlkBpzmmhMw8NTiD5PNczpw9MPmkaK7BGtivAwydJ1Qbu/XrVfUevDAx4yckmDn60CMVnZsuXj5Q==}
+
+  '@tsparticles/slim@3.4.0':
+    resolution: {integrity: sha512-ukQqSdTzBlZHnD6MwRCdJBWbfgWSRNa4BG+H8IVAU5ggdQ7AbnDsdMG/o49cvstguGsKSbjmHYFNkDYGeKasuw==}
+
+  '@tsparticles/updater-color@3.4.0':
+    resolution: {integrity: sha512-joT5O/78p7n3jBq1aiFEp4wMevv8WtfjBJnODwEUO7aiHRozs9tA05djVLYZ7kjH0bLymJoPwxM46SEGSTsh+g==}
+
+  '@tsparticles/updater-destroy@3.4.0':
+    resolution: {integrity: sha512-XFyA2PpDAEuct2uACdMO/GE8LmQ54hJenF+tr9/FJKK18vcVJDkn0a36ShIG4zw36ds36mLqkNLcAAjnZ3pigw==}
+
+  '@tsparticles/updater-gradient@3.4.0':
+    resolution: {integrity: sha512-SkHDl6qGPy370j0+wTTKNdCMDv/rNqvzLERWCRIp44YCagUSHyg/HNQ6L0A+XAdlb8D+p67osEckvwUvGQAqsA==}
+
+  '@tsparticles/updater-life@3.4.0':
+    resolution: {integrity: sha512-bFx/3TTNNnWVmHkrfwXVlLc7R8QfbeX+KQ6dy09n+i2Vs3HnQUF7/VITjt0erNzyHfnqh+q+80gCn6X4brvwEQ==}
+
+  '@tsparticles/updater-opacity@3.4.0':
+    resolution: {integrity: sha512-OCWbebZykDh8ZbTiTQX+pBRXHfTMMJpNXbFps4lTSHXHMDsbEMl5a3/TEFeUk3rd0wkiRSCjPUSGKupoU5B14w==}
+
+  '@tsparticles/updater-orbit@3.4.0':
+    resolution: {integrity: sha512-iggQMzvX+UGaKf/8OKW62O2oEM5gpVCZZtNdcMBjhWN7AohuHhdfQgEy3KczkxptZrbfAE5PwZVuosqEAMldag==}
+
+  '@tsparticles/updater-out-modes@3.4.0':
+    resolution: {integrity: sha512-i80MSXpnfivKlfA0FbAxk2CfZGNG3rPNtx5Pz/ZCDQ71j1YFjztdwfugp9oueu/sLfOSw4hIKfyR062zpgZp6Q==}
+
+  '@tsparticles/updater-roll@3.4.0':
+    resolution: {integrity: sha512-PhkZ7gJZTrAE3S2nYPmxXDCCxXcy7vfqosp4LnKyOLbZH1YwMy+2oltN6Ni22lMz794C2q+zURyZBu2oeH+rgA==}
+
+  '@tsparticles/updater-rotate@3.4.0':
+    resolution: {integrity: sha512-BKmzN8YLSUPe6OngmhmjPCBJ2RpBi88nfoNJekZnVJpbRses1pV632EaOIAEVT1xsUrwVhvsXYa9Sv5iZxfIRg==}
+
+  '@tsparticles/updater-size@3.4.0':
+    resolution: {integrity: sha512-3z7INo2E7HR+ps8V490mOiLcCaFmUJFgObXBO3lF6uZ1xe6SfvVsX2r1HpQLwIpq7Ph2ZqQ4tj8tBPyKtada7g==}
+
+  '@tsparticles/updater-stroke-color@3.4.0':
+    resolution: {integrity: sha512-5pe/777vPZgzlNBkh8GQ3fjT6273wcwlBeq4UkDA/q6bI867d8W+Fi8yUsqfdiS6B5tKSvVsI8rFrfwjEvW0pg==}
+
+  '@tsparticles/updater-tilt@3.4.0':
+    resolution: {integrity: sha512-thrQC37W2Psdr7arqxMeJ0iRM39y4JTRd9cQQVYCIhYkkQeSC6obujNZb+1BDjNM93HduSHKSK1aSXS0TCEWmg==}
+
+  '@tsparticles/updater-twinkle@3.4.0':
+    resolution: {integrity: sha512-EQlEO9YRPBXFBu6Yo9z4R0KZuJJc3hZrBYY5g9t/hWyxwiFY2RlDnRpK9h02SEa/qXwegm96Ka60zs+P2OFzzw==}
+
+  '@tsparticles/updater-wobble@3.4.0':
+    resolution: {integrity: sha512-/+u3ZuyFQW8yH3uY6qEa5zsQi41JSbgqltcrjAPCgcOEtfwXaTUI/XqjMlppkoyA58lfA8nJhWZWVNTjFY3x7g==}
+
+  '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
-    dev: true
 
-  /esbuild@0.19.11:
+  esbuild@0.19.11:
     resolution: {integrity: sha512-HJ96Hev2hX/6i5cDVwcqiJBBtuo9+FeIJOtZ9W1kA5M6AMJRHUZlpYZ1/SbEwtO0ioNAW8rUooVpC/WehY2SfA==}
     engines: {node: '>=12'}
     hasBin: true
-    requiresBuild: true
-    optionalDependencies:
-      '@esbuild/aix-ppc64': 0.19.11
-      '@esbuild/android-arm': 0.19.11
-      '@esbuild/android-arm64': 0.19.11
-      '@esbuild/android-x64': 0.19.11
-      '@esbuild/darwin-arm64': 0.19.11
-      '@esbuild/darwin-x64': 0.19.11
-      '@esbuild/freebsd-arm64': 0.19.11
-      '@esbuild/freebsd-x64': 0.19.11
-      '@esbuild/linux-arm': 0.19.11
-      '@esbuild/linux-arm64': 0.19.11
-      '@esbuild/linux-ia32': 0.19.11
-      '@esbuild/linux-loong64': 0.19.11
-      '@esbuild/linux-mips64el': 0.19.11
-      '@esbuild/linux-ppc64': 0.19.11
-      '@esbuild/linux-riscv64': 0.19.11
-      '@esbuild/linux-s390x': 0.19.11
-      '@esbuild/linux-x64': 0.19.11
-      '@esbuild/netbsd-x64': 0.19.11
-      '@esbuild/openbsd-x64': 0.19.11
-      '@esbuild/sunos-x64': 0.19.11
-      '@esbuild/win32-arm64': 0.19.11
-      '@esbuild/win32-ia32': 0.19.11
-      '@esbuild/win32-x64': 0.19.11
-    dev: true
 
-  /fsevents@2.3.3:
+  fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
 
-  /nanoid@3.3.7:
+  modern-normalize@2.0.0:
+    resolution: {integrity: sha512-CxBoEVKh5U4DH3XuNbc5ONLF6dQBc8dSc7pdZ1957FGbIO5JBqGqqchhET9dTexri8/pk9xBL6+5ceOtCIp1QA==}
+    engines: {node: '>=6'}
+
+  nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
-    dev: true
 
-  /picocolors@1.0.0:
+  picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
-    dev: true
 
-  /postcss@8.4.33:
+  postcss@8.4.33:
     resolution: {integrity: sha512-Kkpbhhdjw2qQs2O2DGX+8m5OVqEcbB9HRBvuYM9pgrjEFUg30A9LmXNlTAUj4S9kgtGyrMbTzVjH7E+s5Re2yg==}
     engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
-    dev: true
 
-  /rollup@4.9.6:
+  rollup@4.9.6:
     resolution: {integrity: sha512-05lzkCS2uASX0CiLFybYfVkwNbKZG5NFQ6Go0VWyogFTXXbR039UVsegViTntkk4OglHBdF54ccApXRRuXRbsg==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
-    dependencies:
-      '@types/estree': 1.0.5
-    optionalDependencies:
-      '@rollup/rollup-android-arm-eabi': 4.9.6
-      '@rollup/rollup-android-arm64': 4.9.6
-      '@rollup/rollup-darwin-arm64': 4.9.6
-      '@rollup/rollup-darwin-x64': 4.9.6
-      '@rollup/rollup-linux-arm-gnueabihf': 4.9.6
-      '@rollup/rollup-linux-arm64-gnu': 4.9.6
-      '@rollup/rollup-linux-arm64-musl': 4.9.6
-      '@rollup/rollup-linux-riscv64-gnu': 4.9.6
-      '@rollup/rollup-linux-x64-gnu': 4.9.6
-      '@rollup/rollup-linux-x64-musl': 4.9.6
-      '@rollup/rollup-win32-arm64-msvc': 4.9.6
-      '@rollup/rollup-win32-ia32-msvc': 4.9.6
-      '@rollup/rollup-win32-x64-msvc': 4.9.6
-      fsevents: 2.3.3
-    dev: true
 
-  /source-map-js@1.0.2:
+  source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
-  /vite@5.0.12:
+  tsparticles@3.4.0:
+    resolution: {integrity: sha512-dJV40INsemU8cav60JvWr3wvEcGitNsRpjepIMenQmew7qo4bk5ZpzY9n6XK5Lu72OwDIyFdF7DCDbE4KTnPsQ==}
+
+  vite@5.0.12:
     resolution: {integrity: sha512-4hsnEkG3q0N4Tzf1+t6NdN9dg/L3BM+q8SWgbSPnJvrgH2kgdyzfVJwbR1ic69/4uMJJ/3dqDZZE5/WwqW8U1w==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -439,10 +574,653 @@ packages:
         optional: true
       terser:
         optional: true
+
+snapshots:
+
+  '@esbuild/aix-ppc64@0.19.11':
+    optional: true
+
+  '@esbuild/android-arm64@0.19.11':
+    optional: true
+
+  '@esbuild/android-arm@0.19.11':
+    optional: true
+
+  '@esbuild/android-x64@0.19.11':
+    optional: true
+
+  '@esbuild/darwin-arm64@0.19.11':
+    optional: true
+
+  '@esbuild/darwin-x64@0.19.11':
+    optional: true
+
+  '@esbuild/freebsd-arm64@0.19.11':
+    optional: true
+
+  '@esbuild/freebsd-x64@0.19.11':
+    optional: true
+
+  '@esbuild/linux-arm64@0.19.11':
+    optional: true
+
+  '@esbuild/linux-arm@0.19.11':
+    optional: true
+
+  '@esbuild/linux-ia32@0.19.11':
+    optional: true
+
+  '@esbuild/linux-loong64@0.19.11':
+    optional: true
+
+  '@esbuild/linux-mips64el@0.19.11':
+    optional: true
+
+  '@esbuild/linux-ppc64@0.19.11':
+    optional: true
+
+  '@esbuild/linux-riscv64@0.19.11':
+    optional: true
+
+  '@esbuild/linux-s390x@0.19.11':
+    optional: true
+
+  '@esbuild/linux-x64@0.19.11':
+    optional: true
+
+  '@esbuild/netbsd-x64@0.19.11':
+    optional: true
+
+  '@esbuild/openbsd-x64@0.19.11':
+    optional: true
+
+  '@esbuild/sunos-x64@0.19.11':
+    optional: true
+
+  '@esbuild/win32-arm64@0.19.11':
+    optional: true
+
+  '@esbuild/win32-ia32@0.19.11':
+    optional: true
+
+  '@esbuild/win32-x64@0.19.11':
+    optional: true
+
+  '@rollup/rollup-android-arm-eabi@4.9.6':
+    optional: true
+
+  '@rollup/rollup-android-arm64@4.9.6':
+    optional: true
+
+  '@rollup/rollup-darwin-arm64@4.9.6':
+    optional: true
+
+  '@rollup/rollup-darwin-x64@4.9.6':
+    optional: true
+
+  '@rollup/rollup-linux-arm-gnueabihf@4.9.6':
+    optional: true
+
+  '@rollup/rollup-linux-arm64-gnu@4.9.6':
+    optional: true
+
+  '@rollup/rollup-linux-arm64-musl@4.9.6':
+    optional: true
+
+  '@rollup/rollup-linux-riscv64-gnu@4.9.6':
+    optional: true
+
+  '@rollup/rollup-linux-x64-gnu@4.9.6':
+    optional: true
+
+  '@rollup/rollup-linux-x64-musl@4.9.6':
+    optional: true
+
+  '@rollup/rollup-win32-arm64-msvc@4.9.6':
+    optional: true
+
+  '@rollup/rollup-win32-ia32-msvc@4.9.6':
+    optional: true
+
+  '@rollup/rollup-win32-x64-msvc@4.9.6':
+    optional: true
+
+  '@tsparticles/all@3.4.0':
+    dependencies:
+      '@tsparticles/effect-bubble': 3.4.0
+      '@tsparticles/effect-trail': 3.4.0
+      '@tsparticles/engine': 3.4.0
+      '@tsparticles/interaction-external-particle': 3.4.0
+      '@tsparticles/interaction-external-pop': 3.4.0
+      '@tsparticles/interaction-light': 3.4.0
+      '@tsparticles/interaction-particles-repulse': 3.4.0
+      '@tsparticles/path-curl-noise': 3.4.0
+      '@tsparticles/path-curves': 3.4.0
+      '@tsparticles/path-perlin-noise': 3.4.0
+      '@tsparticles/path-polygon': 3.4.0
+      '@tsparticles/path-simplex-noise': 3.4.0
+      '@tsparticles/path-svg': 3.4.0
+      '@tsparticles/path-zig-zag': 3.4.0
+      '@tsparticles/pjs': 3.4.0
+      '@tsparticles/plugin-canvas-mask': 3.4.0
+      '@tsparticles/plugin-easing-back': 3.4.0
+      '@tsparticles/plugin-easing-circ': 3.4.0
+      '@tsparticles/plugin-easing-cubic': 3.4.0
+      '@tsparticles/plugin-easing-expo': 3.4.0
+      '@tsparticles/plugin-easing-linear': 3.4.0
+      '@tsparticles/plugin-easing-quart': 3.4.0
+      '@tsparticles/plugin-easing-quint': 3.4.0
+      '@tsparticles/plugin-easing-sine': 3.4.0
+      '@tsparticles/plugin-emitters-shape-canvas': 3.4.0
+      '@tsparticles/plugin-emitters-shape-path': 3.4.0
+      '@tsparticles/plugin-emitters-shape-polygon': 3.4.0
+      '@tsparticles/plugin-export-image': 3.4.0
+      '@tsparticles/plugin-export-json': 3.4.0
+      '@tsparticles/plugin-export-video': 3.4.0
+      '@tsparticles/plugin-hsv-color': 3.4.0
+      '@tsparticles/plugin-infection': 3.4.0
+      '@tsparticles/plugin-motion': 3.4.0
+      '@tsparticles/plugin-poisson-disc': 3.4.0
+      '@tsparticles/plugin-polygon-mask': 3.4.0
+      '@tsparticles/plugin-sounds': 3.4.0
+      '@tsparticles/shape-arrow': 3.4.0
+      '@tsparticles/shape-cards': 3.4.0
+      '@tsparticles/shape-cog': 3.4.0
+      '@tsparticles/shape-heart': 3.4.0
+      '@tsparticles/shape-infinity': 3.4.0
+      '@tsparticles/shape-path': 3.4.0
+      '@tsparticles/shape-rounded-polygon': 3.4.0
+      '@tsparticles/shape-rounded-rect': 3.4.0
+      '@tsparticles/shape-spiral': 3.4.0
+      '@tsparticles/updater-gradient': 3.4.0
+      '@tsparticles/updater-orbit': 3.4.0
+      tsparticles: 3.4.0
+
+  '@tsparticles/basic@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+      '@tsparticles/move-base': 3.4.0
+      '@tsparticles/shape-circle': 3.4.0
+      '@tsparticles/updater-color': 3.4.0
+      '@tsparticles/updater-opacity': 3.4.0
+      '@tsparticles/updater-out-modes': 3.4.0
+      '@tsparticles/updater-size': 3.4.0
+
+  '@tsparticles/effect-bubble@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/effect-trail@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/engine@3.4.0': {}
+
+  '@tsparticles/interaction-external-attract@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-external-bounce@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-external-bubble@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-external-connect@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-external-grab@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-external-particle@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-external-pause@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-external-pop@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-external-push@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-external-remove@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-external-repulse@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-external-slow@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-external-trail@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-light@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-particles-attract@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-particles-collisions@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-particles-links@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/interaction-particles-repulse@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/move-base@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/move-parallax@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/path-curl-noise@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+      '@tsparticles/simplex-noise': 3.4.0
+
+  '@tsparticles/path-curves@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/path-perlin-noise@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+      '@tsparticles/perlin-noise': 3.4.0
+
+  '@tsparticles/path-polygon@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/path-simplex-noise@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+      '@tsparticles/simplex-noise': 3.4.0
+
+  '@tsparticles/path-svg@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/path-zig-zag@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/perlin-noise@3.4.0': {}
+
+  '@tsparticles/pjs@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-absorbers@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-canvas-mask@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-easing-back@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-easing-circ@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-easing-cubic@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-easing-expo@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-easing-linear@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-easing-quad@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-easing-quart@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-easing-quint@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-easing-sine@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-emitters-shape-canvas@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+      '@tsparticles/plugin-emitters': 3.4.0
+
+  '@tsparticles/plugin-emitters-shape-circle@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+      '@tsparticles/plugin-emitters': 3.4.0
+
+  '@tsparticles/plugin-emitters-shape-path@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+      '@tsparticles/plugin-emitters': 3.4.0
+
+  '@tsparticles/plugin-emitters-shape-polygon@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+      '@tsparticles/plugin-emitters': 3.4.0
+
+  '@tsparticles/plugin-emitters-shape-square@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+      '@tsparticles/plugin-emitters': 3.4.0
+
+  '@tsparticles/plugin-emitters@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-export-image@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-export-json@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-export-video@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-hsv-color@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-infection@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-motion@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-poisson-disc@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-polygon-mask@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/plugin-sounds@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-arrow@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-cards@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-circle@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-cog@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-emoji@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-heart@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-image@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-infinity@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-line@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-path@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-polygon@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-rounded-polygon@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-rounded-rect@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-spiral@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-square@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-star@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/shape-text@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/simplex-noise@3.4.0': {}
+
+  '@tsparticles/slim@3.4.0':
+    dependencies:
+      '@tsparticles/basic': 3.4.0
+      '@tsparticles/engine': 3.4.0
+      '@tsparticles/interaction-external-attract': 3.4.0
+      '@tsparticles/interaction-external-bounce': 3.4.0
+      '@tsparticles/interaction-external-bubble': 3.4.0
+      '@tsparticles/interaction-external-connect': 3.4.0
+      '@tsparticles/interaction-external-grab': 3.4.0
+      '@tsparticles/interaction-external-pause': 3.4.0
+      '@tsparticles/interaction-external-push': 3.4.0
+      '@tsparticles/interaction-external-remove': 3.4.0
+      '@tsparticles/interaction-external-repulse': 3.4.0
+      '@tsparticles/interaction-external-slow': 3.4.0
+      '@tsparticles/interaction-particles-attract': 3.4.0
+      '@tsparticles/interaction-particles-collisions': 3.4.0
+      '@tsparticles/interaction-particles-links': 3.4.0
+      '@tsparticles/move-parallax': 3.4.0
+      '@tsparticles/plugin-easing-quad': 3.4.0
+      '@tsparticles/shape-emoji': 3.4.0
+      '@tsparticles/shape-image': 3.4.0
+      '@tsparticles/shape-line': 3.4.0
+      '@tsparticles/shape-polygon': 3.4.0
+      '@tsparticles/shape-square': 3.4.0
+      '@tsparticles/shape-star': 3.4.0
+      '@tsparticles/updater-life': 3.4.0
+      '@tsparticles/updater-rotate': 3.4.0
+      '@tsparticles/updater-stroke-color': 3.4.0
+
+  '@tsparticles/updater-color@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/updater-destroy@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/updater-gradient@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/updater-life@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/updater-opacity@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/updater-orbit@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/updater-out-modes@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/updater-roll@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/updater-rotate@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/updater-size@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/updater-stroke-color@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/updater-tilt@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/updater-twinkle@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@tsparticles/updater-wobble@3.4.0':
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+
+  '@types/estree@1.0.5': {}
+
+  esbuild@0.19.11:
+    optionalDependencies:
+      '@esbuild/aix-ppc64': 0.19.11
+      '@esbuild/android-arm': 0.19.11
+      '@esbuild/android-arm64': 0.19.11
+      '@esbuild/android-x64': 0.19.11
+      '@esbuild/darwin-arm64': 0.19.11
+      '@esbuild/darwin-x64': 0.19.11
+      '@esbuild/freebsd-arm64': 0.19.11
+      '@esbuild/freebsd-x64': 0.19.11
+      '@esbuild/linux-arm': 0.19.11
+      '@esbuild/linux-arm64': 0.19.11
+      '@esbuild/linux-ia32': 0.19.11
+      '@esbuild/linux-loong64': 0.19.11
+      '@esbuild/linux-mips64el': 0.19.11
+      '@esbuild/linux-ppc64': 0.19.11
+      '@esbuild/linux-riscv64': 0.19.11
+      '@esbuild/linux-s390x': 0.19.11
+      '@esbuild/linux-x64': 0.19.11
+      '@esbuild/netbsd-x64': 0.19.11
+      '@esbuild/openbsd-x64': 0.19.11
+      '@esbuild/sunos-x64': 0.19.11
+      '@esbuild/win32-arm64': 0.19.11
+      '@esbuild/win32-ia32': 0.19.11
+      '@esbuild/win32-x64': 0.19.11
+
+  fsevents@2.3.3:
+    optional: true
+
+  modern-normalize@2.0.0: {}
+
+  nanoid@3.3.7: {}
+
+  picocolors@1.0.0: {}
+
+  postcss@8.4.33:
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
+
+  rollup@4.9.6:
+    dependencies:
+      '@types/estree': 1.0.5
+    optionalDependencies:
+      '@rollup/rollup-android-arm-eabi': 4.9.6
+      '@rollup/rollup-android-arm64': 4.9.6
+      '@rollup/rollup-darwin-arm64': 4.9.6
+      '@rollup/rollup-darwin-x64': 4.9.6
+      '@rollup/rollup-linux-arm-gnueabihf': 4.9.6
+      '@rollup/rollup-linux-arm64-gnu': 4.9.6
+      '@rollup/rollup-linux-arm64-musl': 4.9.6
+      '@rollup/rollup-linux-riscv64-gnu': 4.9.6
+      '@rollup/rollup-linux-x64-gnu': 4.9.6
+      '@rollup/rollup-linux-x64-musl': 4.9.6
+      '@rollup/rollup-win32-arm64-msvc': 4.9.6
+      '@rollup/rollup-win32-ia32-msvc': 4.9.6
+      '@rollup/rollup-win32-x64-msvc': 4.9.6
+      fsevents: 2.3.3
+
+  source-map-js@1.0.2: {}
+
+  tsparticles@3.4.0:
+    dependencies:
+      '@tsparticles/engine': 3.4.0
+      '@tsparticles/interaction-external-trail': 3.4.0
+      '@tsparticles/plugin-absorbers': 3.4.0
+      '@tsparticles/plugin-emitters': 3.4.0
+      '@tsparticles/plugin-emitters-shape-circle': 3.4.0
+      '@tsparticles/plugin-emitters-shape-square': 3.4.0
+      '@tsparticles/shape-text': 3.4.0
+      '@tsparticles/slim': 3.4.0
+      '@tsparticles/updater-destroy': 3.4.0
+      '@tsparticles/updater-roll': 3.4.0
+      '@tsparticles/updater-tilt': 3.4.0
+      '@tsparticles/updater-twinkle': 3.4.0
+      '@tsparticles/updater-wobble': 3.4.0
+
+  vite@5.0.12:
     dependencies:
       esbuild: 0.19.11
       postcss: 8.4.33
       rollup: 4.9.6
     optionalDependencies:
       fsevents: 2.3.3
-    dev: true

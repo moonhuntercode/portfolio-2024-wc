@@ -1,16 +1,20 @@
 :root{
-    --size-of-main-container:200px;
+    --size-of-main-container:250px;
     --size_of_line_from_equis:3px;
     --color-de-lineas-de-x:black;
     --invert-color-de-lineas-de-x:white;
-    --file-color:rgb(208, 194, 6);
+    --file-color:rgb(228, 216, 41);
 }
 .ventana_container{
     width: var(--size-of-main-container);
     height: var(--size-of-main-container);
     background: rgba(101, 10, 187, 0.816);
     border-radius: 15px;
-    overflow-y: scroll;
+    list-style: none;
+
+    /* overflow: scroll; */
+        /* background: red; */
+
 }
 #barra_de_titulo_container{
     width: 100%;
@@ -62,7 +66,7 @@
     height: 1.7rem;
     width: 45%;
     border-top-right-radius: 10px;
-    top: 3px;
+    top: 10px;
     cursor: pointer;
     &:hover{
         background-color: rgb(46, 46, 46);

@@ -4,11 +4,16 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "clear && vite",
+    "dev": " vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "@tsparticles/all": "^3.4.0",
+    "@tsparticles/engine": "^3.4.0",
+    "modern-normalize": "^2.0.0"
   }
 }
