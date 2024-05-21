@@ -14,6 +14,9 @@ importers:
       '@tsparticles/engine':
         specifier: ^3.4.0
         version: 3.4.0
+      '@webcomponents/webcomponentsjs':
+        specifier: ^2.8.0
+        version: 2.8.0
       modern-normalize:
         specifier: ^2.0.0
         version: 2.0.0
@@ -508,6 +511,9 @@ packages:
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
+
+  '@webcomponents/webcomponentsjs@2.8.0':
+    resolution: {integrity: sha512-loGD63sacRzOzSJgQnB9ZAhaQGkN7wl2Zuw7tsphI5Isa0irijrRo6EnJii/GgjGefIFO8AIO7UivzRhFaEk9w==}
 
   esbuild@0.19.11:
     resolution: {integrity: sha512-HJ96Hev2hX/6i5cDVwcqiJBBtuo9+FeIJOtZ9W1kA5M6AMJRHUZlpYZ1/SbEwtO0ioNAW8rUooVpC/WehY2SfA==}
@@ -1138,6 +1144,8 @@ snapshots:
       '@tsparticles/engine': 3.4.0
 
   '@types/estree@1.0.5': {}
+
+  '@webcomponents/webcomponentsjs@2.8.0': {}
 
   esbuild@0.19.11:
     optionalDependencies:

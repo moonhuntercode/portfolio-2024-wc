@@ -1,3 +1,6 @@
+// using polyfills to support web components
+import "@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
+
 import {
   VentanaContainer,
   eventosVentanaContainer,
@@ -8,9 +11,7 @@ import Router from "./services/Router.js";
 import "/node_modules/modern-normalize/modern-normalize.css";
 import "./components/web-particles.js";
 
-
 import "./style.css";
-
 
 // prettier-ignore
 document.querySelector("#app").innerHTML =

@@ -14,6 +14,7 @@
   "dependencies": {
     "@tsparticles/all": "^3.4.0",
     "@tsparticles/engine": "^3.4.0",
+    "@webcomponents/webcomponentsjs": "^2.8.0",
     "modern-normalize": "^2.0.0"
   }
 }
