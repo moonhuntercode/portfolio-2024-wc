@@ -28,7 +28,7 @@ const array1 = [];
 myObj.forEach((obj) => {
   array1.push(obj.src);
 });
-console.log(array1);
+// console.log(array1);
 // idea:iterate over an img variable
 for (let index = 0; index < array1.length; index++) {
   //   array1.push(`${myObj[index]}`);
@@ -67,8 +67,7 @@ export class LinksContainer extends HTMLElement {
       <section id="links_container">
       <h1>Links</h1>
       ${list.outerHTML}
-      <h1>Links</h1>
-      ${list.outerHTML}
+     
       </section>
     `;
   }
