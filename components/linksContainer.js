@@ -1,6 +1,8 @@
 import gitIcon from "../imgs/icons/git-icon-black.png";
 import githubIcon from "../imgs/icons/github-icon.png";
 import linkedinIcon from "../imgs/icons/logo-linkedin.png";
+import instagramIcon from "../imgs/icons/instagram-version-2.png";
+import twitchIcon from "../imgs/icons/twitch-icon-v2.png";
 
 import "./links_container.css";
 
@@ -15,10 +17,36 @@ const list = document.createElement("ul");
 // thinking..............
 
 let myObj = [
-  { id: 1, name: "Github", src: "../imgs/icons/github-icon.png" },
-  { id: 2, name: "linkedin", src: "../imgs/icons/logo-linkedin.png" },
-  { id: 3, name: "git", src: "../imgs/icons/git-icon-black.png" },
-  { id: 4, name: "instagram", src: "../imgs/icons/instagram-version-2.png" },
+  {
+    id: 0,
+    name: "github",
+    url: "https://github.com/moonhuntercode",
+    path: `${githubIcon}`,
+  },
+  {
+    id: 1,
+    name: "git",
+    url: "https://www.tiktok.com/@victorcode_",
+    path: `${gitIcon}`,
+  },
+  {
+    id: 2,
+    name: "instagram",
+    url: "https://www.instagram.com/victorcode_/",
+    path: `${instagramIcon}`,
+  },
+  {
+    id: 3,
+    name: "linkedin",
+    url: "https://www.linkedin.com/in/victorcode/",
+    path: `${linkedinIcon}`,
+  },
+  {
+    id: 4,
+    name: "twitch",
+    url: "https://www.twitch.tv/victorcode_",
+    path: `${twitchIcon}`,
+  },
 ];
 
 //this array working well before
@@ -26,9 +54,13 @@ let myObj = [
 
 const array1 = [];
 myObj.forEach((obj) => {
-  array1.push(obj.src);
+  array1.push(obj.path);
 });
-// console.log(array1);
+const arrayUrl = [];
+myObj.forEach((obj) => {
+  arrayUrl.push(obj.url);
+});
+console.log(arrayUrl);
 // idea:iterate over an img variable
 for (let index = 0; index < array1.length; index++) {
   //   array1.push(`${myObj[index]}`);
@@ -37,8 +69,10 @@ for (let index = 0; index < array1.length; index++) {
   //   1 img.src 1
   const element = array1[index];
   const anchor = document.createElement("a");
-  anchor.href = element;
+  anchor.setAttribute("href", arrayUrl[index]);
   anchor.appendChild(img);
+  anchor.setAttribute("target", "_blank");
+
   // list.appendChild(anchor);
 
   // test the elements to see if it works

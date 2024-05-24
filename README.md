@@ -18,3 +18,6 @@
 
     -✅ filosofiá aplicada aquí: si es repetitivo,se puede automatizar.
     
+### beta version 0.002
+
+. ✅ methodo beta para mapear links de un objeto realizado,falta documentarlo
