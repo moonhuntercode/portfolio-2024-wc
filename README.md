@@ -11,6 +11,8 @@
     
     -❌ routing with errors
 
+    -❌ aplicar estado o algo de reactividad o un signal talves,o probarlo con otro framework
+
 
     -✅ web component aplyed
 

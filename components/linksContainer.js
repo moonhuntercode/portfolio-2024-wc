@@ -36,6 +36,10 @@ for (let index = 0; index < array1.length; index++) {
   img.src = array1[index];
   //   1 img.src 1
   const element = array1[index];
+  const anchor = document.createElement("a");
+  anchor.href = element;
+  anchor.appendChild(img);
+  // list.appendChild(anchor);
 
   // test the elements to see if it works
   //   console.log(img.outerHTML);
@@ -43,7 +47,7 @@ for (let index = 0; index < array1.length; index++) {
 
   //   img.src 1 added to list
   const listItem = document.createElement("li");
-  listItem.appendChild(img);
+  listItem.appendChild(anchor);
   list.appendChild(listItem);
 }
 
