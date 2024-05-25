@@ -5,6 +5,8 @@ import {
   VentanaContainer,
   eventosVentanaContainer,
 } from "./components/ventanaContainer.js";
+
+import "./components/ventanaContainer.js";
 import Router from "./services/Router.js";
 // import "web-particles/dist/web-particles.js";
 // initial style for global app
