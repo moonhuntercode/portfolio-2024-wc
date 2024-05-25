@@ -1,8 +1,4 @@
-import gitIcon from "../imgs/icons/git-icon-black.png";
-import githubIcon from "../imgs/icons/github-icon.png";
-import linkedinIcon from "../imgs/icons/logo-linkedin.png";
-import instagramIcon from "../imgs/icons/instagram-version-2.png";
-import twitchIcon from "../imgs/icons/twitch-icon-v2.png";
+import { myObj } from "./links_db.js";
 
 import "./links_container.css";
 
@@ -16,61 +12,44 @@ const list = document.createElement("ul");
 // idea2:automatically create elements,and imgs
 // thinking..............
 
-let myObj = [
-  {
-    id: 0,
-    name: "github",
-    url: "https://github.com/moonhuntercode",
-    path: `${githubIcon}`,
-  },
-  {
-    id: 1,
-    name: "git",
-    url: "https://www.tiktok.com/@victorcode_",
-    path: `${gitIcon}`,
-  },
-  {
-    id: 2,
-    name: "instagram",
-    url: "https://www.instagram.com/victorcode_/",
-    path: `${instagramIcon}`,
-  },
-  {
-    id: 3,
-    name: "linkedin",
-    url: "https://www.linkedin.com/in/victorcode/",
-    path: `${linkedinIcon}`,
-  },
-  {
-    id: 4,
-    name: "twitch",
-    url: "https://www.twitch.tv/victorcode_",
-    path: `${twitchIcon}`,
-  },
-];
-
 //this array working well before
 //  const array2 = [`${img1.outerHTML}`, `${img2.outerHTML}`];
 
-const array1 = [];
+const arrayPath = [];
 myObj.forEach((obj) => {
-  array1.push(obj.path);
+  arrayPath.push(obj.path);
 });
+// console.log(arrayPath);
 const arrayUrl = [];
 myObj.forEach((obj) => {
   arrayUrl.push(obj.url);
 });
-console.log(arrayUrl);
+// console.log(arrayUrl);
 // idea:iterate over an img variable
-for (let index = 0; index < array1.length; index++) {
-  //   array1.push(`${myObj[index]}`);
+for (let index = 0; index < arrayPath.length; index++) {
+  //   arrayPath.push(`${myObj[index]}`);
+  let divs = document.createElement("div");
+  divs.className = "socials-elements";
+  // imgs config start
   let img = document.createElement("img");
-  img.src = array1[index];
+  img.setAttribute("alt", `${myObj[index].name}`);
+  img.src = arrayPath[index];
   //   1 img.src 1
-  const element = array1[index];
+  const element = arrayPath[index];
   const anchor = document.createElement("a");
   anchor.setAttribute("href", arrayUrl[index]);
-  anchor.appendChild(img);
+
+  // en esta parte agregamos la img
+  // adentro de los anchors
+  let spans = document.createElement("span");
+  spans.innerHTML = `${myObj[index].name}`;
+  spans.className = "p_socials";
+
+  // zona de agregar hijos
+  divs.append(img, spans);
+  // anchors are parents
+  anchor.appendChild(divs);
+
   anchor.setAttribute("target", "_blank");
 
   // list.appendChild(anchor);
@@ -91,7 +70,7 @@ for (let index = 0; index < array1.length; index++) {
 //   return result;
 // }, {});
 // console.log(newMyObj);
-// array1.map((element) => {
+// arrayPath.map((element) => {
 //   const listItem = document.createElement("li");
 //   listItem.innerHTML = element;
 //   list.appendChild(listItem);
