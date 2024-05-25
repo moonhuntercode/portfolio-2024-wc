@@ -1,10 +1,7 @@
 // using polyfills to support web components
 import "@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
 
-import {
-  VentanaContainer,
-  eventosVentanaContainer,
-} from "./components/ventanaContainer.js";
+import { eventosVentanaContainer } from "./components/ventanaContainer.js";
 
 import "./components/ventanaContainer.js";
 import Router from "./services/Router.js";
