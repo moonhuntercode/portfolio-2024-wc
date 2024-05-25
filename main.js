@@ -1,9 +1,9 @@
 // using polyfills to support web components
 import "@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
 
-import { eventosVentanaContainer } from "./components/ventanaContainer.js";
+import { eventosVentanaContainer } from "./components/VentanaContainer.js";
 
-import "./components/ventanaContainer.js";
+import "./components/VentanaContainer.js";
 import Router from "./services/Router.js";
 // import "web-particles/dist/web-particles.js";
 // initial style for global app
