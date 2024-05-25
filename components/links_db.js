@@ -50,4 +50,10 @@ export let myObj = [
     url: "https://frontendmasters.com/u/victorcode/",
     path: `${frontendmastersIcon}`,
   },
+  {
+    id: 7,
+    name: "old portfolio",
+    url: "https://victor-code.vercel.app/",
+    path: `/public/software-icon-2.svg`,
+  },
 ];
