@@ -10,6 +10,18 @@ import Router from "./services/Router.js";
 import "/node_modules/modern-normalize/modern-normalize.css";
 import "./components/web-particles.js";
 
+// scroll
+import SimpleBar from "simplebar";
+import "simplebar/dist";
+// import "simplebar/dist/simplebar.css";
+// new SimpleBar(document.querySelector("#links_container"));
+
+
+// You will need a ResizeObserver polyfill for browsers that don't support it! (iOS Safari, Edge, ...)
+import ResizeObserver from 'resize-observer-polyfill';
+window.ResizeObserver = ResizeObserver;
+
+
 import "./style.css";
 
 // prettier-ignore

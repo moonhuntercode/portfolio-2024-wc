@@ -81,7 +81,7 @@ export class LinksContainer extends HTMLElement {
     this.innerHTML =
       /*html*/
       `
-      <section id="links_container">
+      <section data-simplebar  data-simplebar-auto-hide="false" id="links_container">
       <h1>Links</h1>
       ${list.outerHTML}
      

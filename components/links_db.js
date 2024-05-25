@@ -41,13 +41,13 @@ export let myObj = [
   {
     id: 5,
     name: "codecademy",
-    url: "https://www.tiktok.com/@victorcode_",
+    url: "https://www.codecademy.com/profiles/victor.code",
     path: `${codecademyIcon}`,
   },
   {
     id: 6,
     name: "frontendmasters",
-    url: "https://www.tiktok.com/@victorcode_",
+    url: "https://frontendmasters.com/u/victorcode/",
     path: `${frontendmastersIcon}`,
   },
 ];
