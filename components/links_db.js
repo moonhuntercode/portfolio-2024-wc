@@ -1,11 +1,13 @@
-import gitIcon from "../imgs/icons/git-icon-black.png";
-import githubIcon from "../imgs/icons/github-icon.png";
-import linkedinIcon from "../imgs/icons/logo-linkedin.png";
-import instagramIcon from "../imgs/icons/instagram-version-2.png";
-import twitchIcon from "../imgs/icons/twitch-icon-v2.png";
-import tiktokIcon from "../imgs/icons/tiktok-icon-2.png";
-import frontendmastersIcon from "../imgs/icons/frontendmasters.png";
-import codecademyIcon from "../imgs/icons/codecademy.png";
+import {
+  gitIcon,
+  githubIcon,
+  linkedinIcon,
+  instagramIcon,
+  twitchIcon,
+  tiktokIcon,
+  frontendmastersIcon,
+  codecademyIcon,
+} from "../imgs/icons";
 export let myObj = [
   {
     id: 0,

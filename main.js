@@ -5,8 +5,10 @@ import { eventosVentanaContainer } from "./components/VentanaContainer.js";
 
 import "./components/VentanaContainer.js";
 import Router from "./services/Router.js";
+
 // import "web-particles/dist/web-particles.js";
 // initial style for global app
+
 import "/node_modules/modern-normalize/modern-normalize.css";
 import "./components/web-particles.js";
 
