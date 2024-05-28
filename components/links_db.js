@@ -1,5 +1,4 @@
 import {
-  gitIcon,
   githubIcon,
   linkedinIcon,
   instagramIcon,
@@ -7,6 +6,7 @@ import {
   tiktokIcon,
   frontendmastersIcon,
   codecademyIcon,
+  nglIcon,
 } from "../imgs/icons";
 export let myObj = [
   {
@@ -18,21 +18,21 @@ export let myObj = [
 
   {
     id: 1,
-    name: "twitch",
-    url: "https://www.twitch.tv/victorcode_",
-    path: `${twitchIcon}`,
-  },
-  {
-    id: 2,
     name: "instagram",
     url: "https://www.instagram.com/victorcode_/",
     path: `${instagramIcon}`,
   },
   {
-    id: 3,
+    id: 2,
     name: "linkedin",
     url: "https://www.linkedin.com/in/victorcode/",
     path: `${linkedinIcon}`,
+  },
+  {
+    id: 3,
+    name: "pregunta anónima",
+    url: "https://github.com/moonhuntercode",
+    path: `${nglIcon}`,
   },
   {
     id: 4,
@@ -48,14 +48,20 @@ export let myObj = [
   },
   {
     id: 6,
+    name: "twitch",
+    url: "https://www.twitch.tv/victorcode_",
+    path: `${twitchIcon}`,
+  },
+  {
+    id: 7,
     name: "frontendmasters",
     url: "https://frontendmasters.com/u/victorcode/",
     path: `${frontendmastersIcon}`,
   },
   {
-    id: 7,
+    id: 8,
     name: "old portfolio",
     url: "https://victor-code.vercel.app/",
-    path: `/public/software-icon-2.svg`,
+    path: `/software-icon-2.svg`,
   },
 ];
