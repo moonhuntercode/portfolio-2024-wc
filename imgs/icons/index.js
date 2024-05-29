@@ -7,7 +7,7 @@ import tiktokIcon from "./tiktok-icon-2.png";
 import frontendmastersIcon from "./frontendmasters.png";
 import codecademyIcon from "./codecademy.png";
 import nglIcon from "./ngl-icon.png";
-
+import dailyDevIcon from "./daily-dev.png";
 export {
   gitIcon,
   githubIcon,
@@ -18,4 +18,5 @@ export {
   frontendmastersIcon,
   codecademyIcon,
   nglIcon,
+  dailyDevIcon,
 };
