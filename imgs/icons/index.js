@@ -8,6 +8,7 @@ import frontendmastersIcon from "./frontendmasters.png";
 import codecademyIcon from "./codecademy.png";
 import nglIcon from "./ngl-icon.png";
 import dailyDevIcon from "./daily-dev.png";
+import codewarsIcon from "./codewars-icon.png";
 export {
   gitIcon,
   githubIcon,
@@ -19,4 +20,5 @@ export {
   codecademyIcon,
   nglIcon,
   dailyDevIcon,
+  codewarsIcon,
 };

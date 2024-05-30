@@ -8,6 +8,7 @@ import {
   codecademyIcon,
   nglIcon,
   dailyDevIcon,
+  codewarsIcon,
 } from "../imgs/icons";
 export let myObj = [
   {
@@ -61,14 +62,20 @@ export let myObj = [
   },
   {
     id: 8,
-    name: "tiktok",
-    url: "https://www.tiktok.com/@victorcode_",
-    path: `${tiktokIcon}`,
+    name: "codewarrior",
+    url: "https://www.codewars.com/users/victor.code",
+    path: `${codewarsIcon}`,
   },
   {
     id: 9,
     name: "old portfolio",
     url: "https://victor-code.vercel.app/",
     path: `/software-icon-2.svg`,
+  },
+  {
+    id: 10,
+    name: "tiktok",
+    url: "https://www.tiktok.com/@victorcode_",
+    path: `${tiktokIcon}`,
   },
 ];
