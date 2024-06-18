@@ -9,7 +9,9 @@ import codecademyIcon from "./codecademy.png";
 import nglIcon from "./ngl-icon.png";
 import dailyDevIcon from "./daily-dev.png";
 import codewarsIcon from "./codewars-icon.png";
+import telegramIcon from "./telegram-icon.png";
 export {
+  telegramIcon,
   gitIcon,
   githubIcon,
   linkedinIcon,

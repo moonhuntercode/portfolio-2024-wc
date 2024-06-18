@@ -1,5 +1,6 @@
 import {
   githubIcon,
+  telegramIcon,
   linkedinIcon,
   instagramIcon,
   twitchIcon,
@@ -77,5 +78,11 @@ export let myObj = [
     name: "tiktok",
     url: "https://www.tiktok.com/@victorcode_",
     path: `${tiktokIcon}`,
+  },
+  {
+    id: 11,
+    name: "telegram C++/C",
+    url: "https://t.me/Cpluspluslatino",
+    path: `${telegramIcon}`,
   },
 ];
