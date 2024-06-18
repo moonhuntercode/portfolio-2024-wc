@@ -10,6 +10,7 @@ import {
   nglIcon,
   dailyDevIcon,
   codewarsIcon,
+  whatsappIcon,
 } from "../imgs/icons";
 export let myObj = [
   {
@@ -84,5 +85,17 @@ export let myObj = [
     name: "telegram C++/C",
     url: "https://t.me/Cpluspluslatino",
     path: `${telegramIcon}`,
+  },
+  {
+    id: 12,
+    name: "whatsapp community",
+    url: "https://chat.whatsapp.com/DywYPe8kXCTCrxvlvqMg2S",
+    path: `${whatsappIcon}`,
+  },
+  {
+    id: 13,
+    name: "whatsapp channel",
+    url: "https://whatsapp.com/channel/0029Va9E7ck0G0XjYd4zgF1G",
+    path: `${whatsappIcon}`,
   },
 ];
