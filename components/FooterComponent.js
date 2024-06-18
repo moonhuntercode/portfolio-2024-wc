@@ -6,9 +6,9 @@ export class Footer extends HTMLElement {
       /*html*/
       `
     <footer>
+    <hr>
     &#174;victor.code
     </footer>
     `;
   }
 }
-customElements.define("footer-component", Footer);

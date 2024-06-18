@@ -6,6 +6,11 @@ import { eventosVentanaContainer } from "./components/VentanaContainer.js";
 import "./components/VentanaContainer.js";
 import Router from "./services/Router.js";
 
+// footer start
+import { Footer } from "./components";
+customElements.define("footer-component", Footer);
+// footer end
+
 // import "web-particles/dist/web-particles.js";
 // initial style for global app
 
@@ -18,11 +23,9 @@ import "simplebar/dist";
 // import "simplebar/dist/simplebar.css";
 // new SimpleBar(document.querySelector("#links_container"));
 
-
 // You will need a ResizeObserver polyfill for browsers that don't support it! (iOS Safari, Edge, ...)
-import ResizeObserver from 'resize-observer-polyfill';
+import ResizeObserver from "resize-observer-polyfill";
 window.ResizeObserver = ResizeObserver;
-
 
 import "./style.css";
 
@@ -37,8 +40,8 @@ document.querySelector("#app").innerHTML =
       id="tsparticles"
     "></web-particles>
   
-  
-  </div>
+    </div>
+    <footer-component></footer-component>
 `;
 
 // cacheando elementos  de ventana

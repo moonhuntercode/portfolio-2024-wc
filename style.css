@@ -73,3 +73,12 @@ body::before{
   flex-flow: column wrap;
   place-content: center;
 }
+footer{
+  width: var(--one-hundred-percent);
+  background: rgb(73, 10, 132);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-size: 1.7rem;
+}
