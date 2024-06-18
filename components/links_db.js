@@ -15,20 +15,20 @@ import {
 export let myObj = [
   {
     id: 0,
-    name: "github",
+    name: "github profile",
     url: "https://github.com/moonhuntercode",
     path: `${githubIcon}`,
   },
 
   {
     id: 1,
-    name: "instagram",
+    name: "instagram profile",
     url: "https://www.instagram.com/victorcode_/",
     path: `${instagramIcon}`,
   },
   {
     id: 2,
-    name: "codecademy",
+    name: "codecademy profile",
     url: "https://www.codecademy.com/profiles/victor.code",
     path: `${codecademyIcon}`,
   },
@@ -46,25 +46,25 @@ export let myObj = [
   },
   {
     id: 5,
-    name: "linkedin",
+    name: "linkedin profile",
     url: "https://www.linkedin.com/in/victorcode/",
     path: `${linkedinIcon}`,
   },
   {
     id: 6,
-    name: "frontendmasters",
+    name: "frontendmasters profile",
     url: "https://frontendmasters.com/u/victorcode/",
     path: `${frontendmastersIcon}`,
   },
   {
     id: 7,
-    name: "twitch",
+    name: "twitch channel",
     url: "https://www.twitch.tv/victorcode_",
     path: `${twitchIcon}`,
   },
   {
     id: 8,
-    name: "codewarrior",
+    name: "codewarrior profile",
     url: "https://www.codewars.com/users/victor.code",
     path: `${codewarsIcon}`,
   },
@@ -76,13 +76,13 @@ export let myObj = [
   },
   {
     id: 10,
-    name: "tiktok",
+    name: "tiktok profile",
     url: "https://www.tiktok.com/@victorcode_",
     path: `${tiktokIcon}`,
   },
   {
     id: 11,
-    name: "telegram C++/C",
+    name: "C++/C community",
     url: "https://t.me/Cpluspluslatino",
     path: `${telegramIcon}`,
   },
