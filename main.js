@@ -9,7 +9,13 @@ import Router from "./services/Router.js";
 // footer start
 import { Footer } from "./components";
 customElements.define("footer-component", Footer);
+
 // footer end
+
+// cookies start
+import { cookiesComponent } from "./components";
+customElements.define("cookies-component", cookiesComponent);
+// cookies end
 
 // import "web-particles/dist/web-particles.js";
 // initial style for global app
@@ -34,14 +40,14 @@ document.querySelector("#app").innerHTML =
   /*html*/
   `
   <div>
-  
   <ventana-container></ventana-container>
   <web-particles
-      id="tsparticles"
-    "></web-particles>
+  id="tsparticles"
+  "></web-particles>
   
-    </div>
-    <footer-component></footer-component>
+  </div>
+  <footer-component></footer-component>
+  <cookies-component></cookies-component>
 `;
 
 // cacheando elementos  de ventana
