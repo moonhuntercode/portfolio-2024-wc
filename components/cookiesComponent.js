@@ -1,3 +1,4 @@
+import equisIcon from "../imgs/icons/equis-icon.svg";
 export class cookiesComponent extends HTMLElement {
   constructor() {
     super();
@@ -5,6 +6,7 @@ export class cookiesComponent extends HTMLElement {
       /*html*/
       `
             <div id="cookies_container">
+            <img id="equis_svg" src="${equisIcon}" alt="equis">
             <div id="cookies_text">
             <p>Este sitio web usa cookies para garantizarle una mejor experiencia. Al continuar utilizando el sitio, acepta nuestra <a href="/cookies">política de privacidad</a>.</p>
             </div>
@@ -15,21 +17,21 @@ export class cookiesComponent extends HTMLElement {
   }
 }
 window.onload = () => {
+  let intervalo;
+  // console.log(intervalo);
   const progress = document.querySelector("#progress_of_cookies");
-  while (progress.value < 100) {
-    // every 1 second add 10
-
-    intervalo = setInterval(() => {
-      progress.value += 50;
-    }, 1000);
-
+  const container = document.querySelector("#cookies_container");
+  intervalo = setInterval(() => {
+    progress.value += 10;
     if (progress.value >= 100) {
+      progress.value = 100;
       clearInterval(intervalo);
+      container.remove();
     }
-    // progress.value += 10;
-    // progress.value += 1;
-    // lentear el proceso
-  }
+    document.querySelector("#equis_svg").addEventListener("click", () => {
+      container.remove();
+    });
+  }, 700);
 };
 // <div id="cookies_btn_container">
 // <button id="accept_cookies">aceptar</button>

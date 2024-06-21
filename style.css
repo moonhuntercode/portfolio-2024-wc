@@ -84,4 +84,21 @@ footer{
 }
 #cookies_container{
   background: rebeccapurple;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  & img#equis_svg{
+    --size-equis:1.7rem;
+    width: var(--size-equis);
+    height: var(--size-equis);
+    /* position: static; */
+    right: 0;
+    float: right;
+  }
+ & a{
+   color: white;
+   text-decoration: underline;
+   font-weight: bold;
+ }
 }
