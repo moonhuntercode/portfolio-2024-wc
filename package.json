@@ -16,6 +16,7 @@
     "@tsparticles/engine": "^3.4.0",
     "@webcomponents/webcomponentsjs": "^2.8.0",
     "modern-normalize": "^2.0.0",
+    "navaid": "^1.2.0",
     "resize-observer-polyfill": "^1.5.1",
     "simplebar": "^6.2.6"
   }

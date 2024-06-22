@@ -4,7 +4,7 @@ import "@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
 import { eventosVentanaContainer } from "./components/VentanaContainer.js";
 
 import "./components/VentanaContainer.js";
-import Router from "./services/Router.js";
+import { RouterTwo } from "./services/Router2.js";
 
 // footer start
 import { Footer } from "./components";
@@ -56,7 +56,7 @@ const linea1 = document.querySelector("#equis_linea_1");
 const linea2 = document.querySelector("#equis_linea_2");
 eventosVentanaContainer(container, linea1, linea2);
 window.app = {};
-app.router = Router;
+app.router = RouterTwo;
 // setupCounter(document.querySelector("#counter"));
 window.addEventListener("DOMContentLoaded", () => {
   app.router.init();
