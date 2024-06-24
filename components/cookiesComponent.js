@@ -22,15 +22,15 @@ window.onload = () => {
   const progress = document.querySelector("#progress_of_cookies");
   const container = document.querySelector("#cookies_container");
   intervalo = setInterval(() => {
+    document.querySelector("#equis_svg").addEventListener("click", () => {
+      container.remove();
+    });
     progress.value += 10;
     if (progress.value >= 100) {
       progress.value = 100;
       clearInterval(intervalo);
       container.remove();
     }
-    document.querySelector("#equis_svg").addEventListener("click", () => {
-      container.remove();
-    });
   }, 700);
 };
 // <div id="cookies_btn_container">

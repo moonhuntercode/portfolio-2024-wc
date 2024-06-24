@@ -1,4 +1,4 @@
-import { navaid } from "navaid";
+import navaid from "navaid";
 
 export let routerOne = navaid();
 console.log(routerOne);
@@ -7,8 +7,8 @@ routerOne
   .on("/", () => {
     console.log("~> /");
   })
-  .on("/cookies/", (params) => {
-    console.log("~> /cookies", params);
+  .on("/cookies/", () => {
+    console.log("~> /cookies");
   });
 
 // Run as single instance

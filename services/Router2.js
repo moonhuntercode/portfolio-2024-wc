@@ -5,14 +5,14 @@ export const RouterTwo = {
         event.preventDefault();
         // const url1 = event.target.href;
         const url = event.target.getAttribute("href");
-        Router.go(url);
+        RouterTwo.go(url);
       });
     });
     window.addEventListener("popstate", (event) => {
-      Router.go(event.state.route, false);
+      RouterTwo.go(event.state.route, false);
     });
     // Check the initial url
-    Router.go(window.location.pathname);
+    RouterTwo.go(window.location.pathname);
   },
   go: (route, addToHistory = true) => {
     console.log(`Going to ${route}`);
