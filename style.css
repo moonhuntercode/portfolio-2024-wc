@@ -102,3 +102,10 @@ footer{
    font-weight: bold;
  }
 }
+.vista{
+  color: rgb(213, 168, 255);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
