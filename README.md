@@ -1,7 +1,15 @@
 # portfolio-2024
 ## beta version with web components
 
--custom Elements with ES Modules
+-this project is vanilla js,custom Elements with ES Modules + vitejs
+
+-Custom Elements
+The Custom Elements specification lays the foundation for designing and using new types of DOM elements.
+
+-ES Modules
+The ES Modules specification defines the inclusion and reuse of JS documents in a standards based, modular, performant way.
+
+-[souce](https://www.webcomponents.org/introduction)
 
 -later: with svelte maybe
 
@@ -15,7 +23,7 @@
     -❌ loader needed
     -❌ wrap main inside index?, similar to react
     -❌ bug in new loading ,need identify background-image inside , and fix ui
-
+    -❌ la idea es que el loading desaparesca , cuando todas las imágenes carguen en la app, line 50 , inside style.css
 
 
     -✅ web component aplyed

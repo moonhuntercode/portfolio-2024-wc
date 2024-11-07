@@ -1,5 +1,5 @@
 // components/Loading.js
-export default class Loading extends HTMLElement {
+export class Loading extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div class="loading-container">
@@ -9,5 +9,3 @@ export default class Loading extends HTMLElement {
     `;
   }
 }
-
-customElements.define("my-loading", Loading);

@@ -4,7 +4,10 @@ import { eventosVentanaContainer } from "./components/VentanaContainer.js";
 import "./components/VentanaContainer.js";
 
 // loading component start
-import "./components/Loading.js";
+window.addEventListener("beforeunload", () => {});
+import { Loading } from "./components/Loading.js";
+customElements.define("my-loading", Loading);
+// loading component end
 
 // footer start
 import { Footer } from "./components";
@@ -60,8 +63,8 @@ eventosVentanaContainer(container, linea1, linea2);
 // loading component,configs start
 
 const images = document.querySelectorAll("img");
-const gif = document.querySelector(".gif");
-console.log(gif);
+const gif = document.querySelector("body").style.backgroundImage;
+console.log(`el gif es: ${gif}`);
 console.log(images);
 const loading = document.getElementById("loading");
 
@@ -69,12 +72,20 @@ images.forEach((image) => {
   image.addEventListener("load", () => {
     image.dataset.loaded = "true";
     checkAllImagesLoaded();
+    console.log("imagenes cargadas exitosamente");
+    // here the needed gif,or background
   });
 });
 
 function checkAllImagesLoaded() {
-  const allLoaded = [...images].every((image) => image.dataset.loaded === "true");
+  const allLoaded = [...images].every(
+    (image) =>
+      // the place to add the gif
+
+      image.dataset.loaded === "true"
+  );
   if (allLoaded) {
+    // comment to test without desapear
     loading.style.display = "none";
   }
 }

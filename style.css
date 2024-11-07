@@ -1,3 +1,4 @@
+/* main styles for global */
 @import "/node_modules/modern-normalize/modern-normalize.css";
 
 :root {
@@ -46,6 +47,7 @@
 
 
 body{
+  /* here, this img , i need recognize, in js, to be loaded */
   background-image:url('./imgs/gato-purple-1.gif');
 
   /* filter: brightness(0.2); */
@@ -133,11 +135,14 @@ footer{
 }
 /* loading start */
 .loading-container {
+  position: absolute;
   display: flex;
+  flex-flow: wrap column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: var(--one-hundred-percent);
   width: 100vw;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
 }
