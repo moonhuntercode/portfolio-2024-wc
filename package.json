@@ -2,23 +2,23 @@
   "author": "victor code",
   "name": "portfolio-2024-wc",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "d": "vite",
     "build": "vite build --base=/",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4",
-    "vite": "^5.0.8"
+    "vite": "^5.4.10"
   },
   "dependencies": {
-    "@tsparticles/all": "^3.4.0",
-    "@tsparticles/engine": "^3.4.0",
+    "@tsparticles/all": "^3.5.0",
+    "@tsparticles/engine": "^3.5.0",
     "@webcomponents/webcomponentsjs": "^2.8.0",
     "modern-normalize": "^2.0.0",
     "resize-observer-polyfill": "^1.5.1",
-    "simplebar": "^6.2.6"
-  }
+    "simplebar": "^6.2.7"
+  },
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
 }

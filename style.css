@@ -28,20 +28,22 @@
     background-color: #f9f9f9;
   }
 }
-/* start reset */
-*,*::after,*::before{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer reset{
+
+  /* start reset */
+  *,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body,html{
+    width: var(--one-hundred-percent);
+    height: var(--one-hundred-percent);
+  }
+  /* ends reset */
+
 }
-body,html{
-  width: var(--one-hundred-percent);
-  height: var(--one-hundred-percent);
-}
-/* ends reset */
-a{
-  text-decoration: none;
-}
+
 
 body{
   background-image:url('./imgs/gato-purple-1.gif');
@@ -51,6 +53,7 @@ body{
   /* background-size: contain; */
   background-position: left;
   /* background-repeat: no-repeat; */
+  
 }
 body::before{
   content: '';
@@ -72,6 +75,15 @@ body::before{
   display: flex;
   flex-flow: column wrap;
   place-content: center;
+  a{
+  color: rgb(255, 255, 255);
+    text-decoration: none;
+
+  &:hover{
+    text-decoration: underline;
+    color: rgb(174, 123, 255);
+  }
+  }
 }
 footer{
   width: var(--one-hundred-percent);
@@ -109,3 +121,39 @@ footer{
   width: 100%;
   text-align: center;
 }
+.cookies_message{
+  --size-of-msg:50px;
+  width:var(--size-of-msg);
+  height:var(--size-of-msg);
+  position: absolute;
+  inset:0;
+  z-index: 5;
+
+  background: rgba(255, 255, 255, 0.459);
+}
+/* loading start */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.spinner {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* loading end */

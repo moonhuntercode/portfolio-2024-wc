@@ -14,6 +14,8 @@
     -❌ aplicar estado o algo de reactividad o un signal talves,o probarlo con otro framework
     -❌ loader needed
     -❌ wrap main inside index?, similar to react
+    -❌ bug in new loading ,need identify background-image inside , and fix ui
+
 
 
     -✅ web component aplyed

@@ -1,20 +1,20 @@
 // using polyfills to support web components
 import "@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
-
 import { eventosVentanaContainer } from "./components/VentanaContainer.js";
-
 import "./components/VentanaContainer.js";
 
+// loading component start
+import "./components/Loading.js";
 
 // footer start
 import { Footer } from "./components";
 customElements.define("footer-component", Footer);
-
 // footer end
 
 // cookies start
 import { cookiesComponent } from "./components";
 customElements.define("cookies-component", cookiesComponent);
+// cookiesComponent.prototype.elemento(document.querySelector("#politicas_privacidad"));
 // cookies end
 
 // import "web-particles/dist/web-particles.js";
@@ -35,17 +35,18 @@ window.ResizeObserver = ResizeObserver;
 
 import "./style.css";
 
+// ends of imports
+
 // prettier-ignore
 document.querySelector("#app").innerHTML =
   /*html*/
   `
-  <div>
+  <my-loading id="loading"></my-loading>
   <ventana-container></ventana-container>
   <web-particles
   id="tsparticles"
   "></web-particles>
   
-  </div>
   <footer-component></footer-component>
   <cookies-component></cookies-component>
 `;
@@ -56,3 +57,24 @@ const linea1 = document.querySelector("#equis_linea_1");
 const linea2 = document.querySelector("#equis_linea_2");
 eventosVentanaContainer(container, linea1, linea2);
 
+// loading component,configs start
+
+const images = document.querySelectorAll("img");
+const gif = document.querySelector(".gif");
+console.log(gif);
+console.log(images);
+const loading = document.getElementById("loading");
+
+images.forEach((image) => {
+  image.addEventListener("load", () => {
+    image.dataset.loaded = "true";
+    checkAllImagesLoaded();
+  });
+});
+
+function checkAllImagesLoaded() {
+  const allLoaded = [...images].every((image) => image.dataset.loaded === "true");
+  if (allLoaded) {
+    loading.style.display = "none";
+  }
+}
