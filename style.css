@@ -48,7 +48,7 @@
 
 body{
   /* here, this img , i need recognize, in js, to be loaded */
-  background-image:url('./imgs/gato-purple-1.gif');
+  /* background-image:url('./imgs/gato-purple-1.gif'); */
 
   /* filter: brightness(0.2); */
   background-size: cover;
@@ -162,3 +162,6 @@ footer{
 }
 
 /* loading end */
+#gif-cat:hover{
+background-color:aqua ;
+}

@@ -1,3 +1,4 @@
+// links_db.js
 import {
   githubIcon,
   telegramIcon,
@@ -12,7 +13,7 @@ import {
   codewarsIcon,
   whatsappIcon,
 } from "../imgs/icons";
-export let myObj = [
+export let fakeDbofLinks = [
   {
     id: 0,
     name: "github profile",

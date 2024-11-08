@@ -29,9 +29,9 @@ export class cookiesComponent extends HTMLElement {
     newDiv.appendChild(newContent);
 
     newDiv.className = "cookies_message";
-    console.log(elemento1);
+    // console.log(elemento1);
     const apegandoAlContenido = elemento1;
-    apegandoAlContenido.appendChild(newDiv);    
+    apegandoAlContenido.appendChild(newDiv);
   } catch (error) {
     console.error(error);
   }

@@ -1,92 +1,78 @@
-import { myObj } from "./links_db.js";
+/*Entiendo que tu archivo links_db.js tiene una estructura diferente a la que yo había asumido.
+No hay problemas, podemos adaptar el código para que se ajuste a tu estructura de datos.
+Aquí te dejo el código actualizado:
+ */
+// Importamos los enlaces ficticios desde el archivo links_db.js
+import { fakeDbofLinks } from "./links_db.js";
 
+// Importamos el archivo CSS para estilos
 import "./links_container.css";
 
+// Creamos un elemento ul para contener los enlaces
 const list = document.createElement("ul");
 
-//automate create elements
-// const img1 = document.createElement("img");
-// img1.src = `${githubIcon}`;
-// const img2 = document.createElement("img");
-// img2.src = `${gitIcon}`;
-// idea2:automatically create elements,and imgs
-// thinking..............
+// Recorremos el arreglo de enlaces ficticios
+fakeDbofLinks.forEach((obj) => {
+  console.log("Procesando imagen:", obj.path);
 
-//this array working well before
-//  const array2 = [`${img1.outerHTML}`, `${img2.outerHTML}`];
+  // Creamos un div para cada enlace
+  const div = document.createElement("div");
+  div.className = "socials-elements";
 
-const arrayPath = [];
-myObj.forEach((obj) => {
-  arrayPath.push(obj.path);
-});
-// console.log(arrayPath);
-const arrayUrl = [];
-myObj.forEach((obj) => {
-  arrayUrl.push(obj.url);
-});
-// console.log(arrayUrl);
-// idea:iterate over an img variable
-for (let index = 0; index < arrayPath.length; index++) {
-  //   arrayPath.push(`${myObj[index]}`);
-  let divs = document.createElement("div");
-  divs.className = "socials-elements";
-  // imgs config start
-  let img = document.createElement("img");
-  img.setAttribute("alt", `${myObj[index].name}`);
-  img.src = arrayPath[index];
-  //   1 img.src 1
-  const element = arrayPath[index];
+  // Creamos una imagen para cada enlace con un placeholder
+  const img = document.createElement("img");
+  img.alt = obj.name; // Texto alternativo para la imagen
+  img.loading = "lazy"; // Atributo para carga diferida de imágenes
+  img.src = obj.path; // Ruta de la imagen
+  img.className = "lazy-image";
+  img.onerror = function () {
+    console.error("Error al cargar imagen:", this.src);
+  };
+
+  // Creamos un enlace para cada imagen
   const anchor = document.createElement("a");
-  anchor.setAttribute("href", arrayUrl[index]);
+  anchor.href = obj.url; // URL del enlace
+  anchor.target = "_blank"; // Abrir enlace en nueva pestaña
 
-  // en esta parte agregamos la img
-  // adentro de los anchors
-  let spans = document.createElement("span");
-  spans.innerHTML = `${myObj[index].name}`;
-  spans.className = "p_socials";
+  // Creamos un span para el texto del enlace
+  const span = document.createElement("span");
+  span.innerHTML = obj.name; // Texto del enlace
+  span.className = "p_socials";
 
-  // zona de agregar hijos
-  divs.append(img, spans);
-  // anchors are parents
-  anchor.appendChild(divs);
+  // Agregamos la imagen y el texto al div
+  div.append(img, span);
 
-  anchor.setAttribute("target", "_blank");
+  // Agregamos el div al enlace
+  anchor.appendChild(div);
 
-  // list.appendChild(anchor);
-
-  // test the elements to see if it works
-  //   console.log(img.outerHTML);
-  //   ❌ in test, f.e.g img.src = "../imgs/icons/git-icon-black.png";
-
-  //   img.src 1 added to list
+  // Creamos un elemento li para contener el enlace
   const listItem = document.createElement("li");
-  listItem.appendChild(anchor);
-  list.appendChild(listItem);
-}
 
-// save for tests
-// let newMyObj = myObj.reduce(function (result, currentObject) {
-//   result[currentObject.id] = currentObject.src;
-//   return result;
-// }, {});
-// console.log(newMyObj);
-// arrayPath.map((element) => {
-//   const listItem = document.createElement("li");
-//   listItem.innerHTML = element;
-//   list.appendChild(listItem);
-// });
+  // Agregamos el enlace al elemento li
+  listItem.appendChild(anchor);
+
+  // Agregamos el elemento li a la lista
+  list.appendChild(listItem);
+});
+
+// Definimos la clase LinksContainer como un elemento web personalizado
 export class LinksContainer extends HTMLElement {
+  // Constructor de la clase
   constructor() {
     super();
-    this.innerHTML =
-      /*html*/
-      `
-      <section data-simplebar  data-simplebar-auto-hide="false" id="links_container">
-      <h1>Links</h1>
-      ${list.outerHTML}
-     
+
+    // Asignamos el HTML interno del elemento
+    this.innerHTML = /*html*/ `
+      <section data-simplebar data-simplebar-auto-hide="false" id="links_container">
+        <h1>Links</h1>
+        ${list.outerHTML} 
+        <!-- Agregamos la lista de enlaces-->
       </section>
     `;
   }
 }
+
+//Registramos el elemento web personalizado
 customElements.define("links-container", LinksContainer);
+/*No necesitamos hacer cambios en el archivo links_db.js.
+Si tienes algún problema o error, no dudes en preguntar.*/

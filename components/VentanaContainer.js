@@ -33,7 +33,7 @@ export class VentanaContainer extends HTMLElement {
         `;
   }
 }
-customElements.define("ventana-container", VentanaContainer);
+// end
 export const eventosVentanaContainer = (container, linea1, linea2) => {
   ["mouseout", "mouseup", "mousedown"].forEach((event) => {
     container.addEventListener(event, () => {
