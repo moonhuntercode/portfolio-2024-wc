@@ -4,6 +4,7 @@
 // importar polyfills para web components
 import "@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
 
+
 // importar estilos globales
 import "/node_modules/modern-normalize/modern-normalize.css";
 import "./style.css";
@@ -43,7 +44,9 @@ document.querySelector("#app").innerHTML =
 // captura todas las imágenes
 const images = document.querySelectorAll("img");
 const loading = document.getElementById("loading");
-let srcGif = "./imgs/gato-purple-1.gif";
+import gatoGif from "./imgs/gato-purple-1.gif";
+let srcGif = gatoGif;
+console.log(srcGif);
 
 // crear una imagen adicional pa gif y add to list of resources a cargar
 let gifImage = new Image();
