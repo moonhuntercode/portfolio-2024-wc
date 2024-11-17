@@ -79,11 +79,20 @@ body::before{
   place-content: center;
   a{
   color: rgb(255, 255, 255);
-    text-decoration: none;
+  text-decoration: underline;
+    
 
   &:hover{
-    text-decoration: underline;
-    color: rgb(174, 123, 255);
+    font-size: 1.2em;
+
+  }
+  
+  &:active{
+    color: rgb(194, 156, 255);
+    
+    transform: scale(1.5);
+    font-size: .9em;
+    /* transform: ; */
   }
   }
 }

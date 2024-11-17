@@ -1,5 +1,9 @@
 import "./ventana_container.css";
 import "./linksContainer.js";
+import { LinksContainer } from "./linksContainer.js";
+//Registramos el elemento web personalizado
+customElements.define("links-container", LinksContainer);
+
 // console.log(typeof list);
 // Pass a function to map
 /* const map1 = array1

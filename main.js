@@ -62,17 +62,32 @@ resources.forEach((img) => {
 
 // Manejar la carga de cada imagen
 function handleImageLoad() {
-  this.dataset.loaded = "true";
-  checkAllImagesLoaded();
+  try {
+    this.dataset.loaded = "true";
+    checkAllImagesLoaded();
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 // Verificar si todas las imágenes se han cargado
 function checkAllImagesLoaded() {
-  const allLoaded = resources.every((img) => img.dataset.loaded === "true");
-  if (allLoaded) {
-    console.log("Todas las imágenes cargadas.");
-    loading.style.display = "none"; // Ocultar el componente Loader
-    document.body.style.backgroundImage = `url(${srcGif})`; // Cambiar fondo al GIF
+  try {
+    // here  //
+
+    const allLoaded = resources.every((img) => img.dataset.loaded === "true");
+    if (allLoaded) {
+      console.log("Todas las imágenes cargadas.");
+      console.log("all img loaded 🥳");
+
+      // Ocultar el componente Loader
+      loading.style.visibility = "hidden";
+      loading.style.display = "none";
+
+      document.body.style.backgroundImage = `url(${srcGif})`; // Cambiar fondo al GIF
+    }
+  } catch (error) {
+    console.log(error);
   }
 }
 

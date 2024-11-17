@@ -72,7 +72,7 @@ export class LinksContainer extends HTMLElement {
   }
 }
 
-//Registramos el elemento web personalizado
-customElements.define("links-container", LinksContainer);
+
+
 /*No necesitamos hacer cambios en el archivo links_db.js.
 Si tienes algún problema o error, no dudes en preguntar.*/

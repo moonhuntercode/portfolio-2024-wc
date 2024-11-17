@@ -29,6 +29,8 @@ The ES Modules specification defines the inclusion and reuse of JS documents in 
     -✅ web component aplyed
 
     -✅ filosofiá aplicada aquí: si es repetitivo,se puede automatizar.
+
+    -✅ apliqué cambio de tamaño de fuente a el texto cuando hago click con em , porque es ideal cuando deseas que el tamaño de fuente se adapte automáticamente al tamaño del elemento y mantener una relación consistente entre ambos.
     
 ### beta version 0.002
 
