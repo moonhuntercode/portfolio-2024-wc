@@ -21,6 +21,8 @@ The ES Modules specification defines the inclusion and reuse of JS documents in 
 
     -❌ aplicar estado o algo de reactividad o un signal talves,o probarlo con otro framework
     -❌ loader needed
+    -❌ scroll se oculta en mobile, comportamiento inesperado
+
     -❌ wrap main inside index?, similar to react
     -❌ bug in new loading ,need identify background-image inside , and fix ui
     -❌ la idea es que el loading desaparesca , cuando todas las imágenes carguen en la app, line 50 , inside style.css

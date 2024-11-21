@@ -7,6 +7,7 @@ import { fakeDbofLinks } from "./links_db.js";
 
 // Importamos el archivo CSS para estilos
 import "./links_container.css";
+import SimpleBar from "simplebar";
 
 // Creamos un elemento ul para contener los enlaces
 const list = document.createElement("ul");
@@ -71,7 +72,6 @@ export class LinksContainer extends HTMLElement {
     `;
   }
 }
-
 
 
 /*No necesitamos hacer cambios en el archivo links_db.js.

@@ -4,6 +4,9 @@ img {
 }
 #links_container {
   overflow-y: scroll;
+  overflow: scroll;
+  scrollbar-width: thin;
+  
   background: purple;
   list-style: none;
   height: var(--one-hundred-percent);
